@@ -18,5 +18,7 @@
 
 		<?php wp_footer(); ?>
 
+		<i class="fa fa-envelope-o" aria-hidden="true"></i> 
+
 	</body>
 </html>

@@ -50,3 +50,5 @@ function inhabitent_logo_title_url() {
 	return 'inhabitent';
 }
 add_filter('login_headertitle', 'inhabitent_logo_title_url');
+
+// filter widget 
