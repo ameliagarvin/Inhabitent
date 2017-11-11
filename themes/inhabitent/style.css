@@ -602,6 +602,10 @@ a {
 .bypostauthor {
   display: block; }
 
+#content {
+  width: 1120px;
+  margin: auto; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -666,3 +670,7 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.blog .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
