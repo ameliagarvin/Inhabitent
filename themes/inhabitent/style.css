@@ -363,7 +363,7 @@ dd {
   margin: 0 1.5rem 1.5rem; }
 
 img {
-  height: auto;
+  height: 30px;
   /* Make sure images are scaled correctly. */
   max-width: 100%;
   /* Adhere to container width. */ }
@@ -444,7 +444,8 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: royalblue;
+  text-decoration: none; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -457,7 +458,9 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   float: left;
   width: 100%; }
   .main-navigation ul {
@@ -633,6 +636,37 @@ a {
 #content {
   width: 1120px;
   margin: auto; }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.wood {
+  background-image: url("images/dark-wood.png"); }
+
+.contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Merriweater", Helvetica, serif;
+  text-decoration: none; }
+  .contact-info p {
+    font-family: "Montserrat", Arial, sans-serif;
+    color: #d99054; }
+
+.business-hours {
+  font-family: "Merriweater", Helvetica, serif;
+  text-decoration: none; }
+  .business-hours p {
+    font-family: "Montserrat", Arial, sans-serif;
+    color: #d99054; }
+  .business-hours li {
+    list-style-type: none; }
 
 /*--------------------------------------------------------------
 # Media
