@@ -15,10 +15,12 @@
 	 <div class= "contact-info">
     <p>CONTACT INFO</p>
 			<p><i class="fa fa-envelope-o"aria-hidden="true"><a href="#">info@inhabitent.com</a></i></p> 
-			<i class="fa fa-phone"aria-hidden="true"><a href="#">778-456-7891</a></i>
+			<p><i class="fa fa-phone"aria-hidden="true"><a href="#">778-456-7891</a></i></p>
+		  <p>
 			<i class="fa fa-facebook-square"aria-hidden="true"></i>
 			<i class="fa fa-twitter-square"aria-hidden="true"></i>
 			<i class="fa fa-google-plus-square"aria-hidden="true"></i>
+     </p>
 		</div>
 
 		<div class= "business-hours">

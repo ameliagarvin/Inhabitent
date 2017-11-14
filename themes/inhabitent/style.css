@@ -717,12 +717,54 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+#primary {
+  padding-right: 5%;
+  padding-top: 50px; }
+
+#secondary {
+  padding-left: 5%;
+  border-left: 1px solid #808080; }
+
+.widget-title {
+  text-transform: uppercase;
+  width: 250px; }
+
+.textwidget {
+  font-family: "Merriweather", Helvetica, serif; }
+
 .blog .site-content,
 .error404 .site-content,
 .page-id-72 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.blog .site-content {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .blog .site-content .entry-header {
+    position: relative; }
+    .blog .site-content .entry-header img {
+      width: 100%; }
+    .blog .site-content .entry-header .entry-title {
+      background-color: #248A83;
+      font-family: "Montserrat", Arial, sans-serif;
+      text-transform: uppercase;
+      position: absolute;
+      top: 20px;
+      left: 0; }
+      .blog .site-content .entry-header .entry-title a {
+        color: #f1f1f1; }
+    .blog .site-content .entry-header .entry-meta {
+      background-color: #248A83;
+      font-family: "Montserrat", Arial, sans-serif;
+      color: #f1f1f1;
+      text-align: center;
+      position: absolute;
+      right: 0;
+      bottom: 7px; }
 
 /* header */
 .search-icon {
@@ -764,7 +806,8 @@ object {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: "Merriweather", Helvetica, serif;
-  text-decoration: none; }
+  text-decoration: none;
+  width: 25%; }
   .contact-info p {
     font-family: "Montserrat", Arial, sans-serif;
     color: #d99054; }
@@ -773,7 +816,8 @@ object {
 
 .business-hours {
   font-family: "Merriweather", Helvetica, serif;
-  text-decoration: none; }
+  text-decoration: none;
+  width: 25%; }
   .business-hours p {
     font-family: "Montserrat", Arial, sans-serif;
     color: #d99054; }
@@ -782,6 +826,10 @@ object {
     padding: 0; }
   .business-hours li {
     list-style-type: none; }
+
+.inhabitent-logo {
+  width: 50%;
+  padding-top: 20px; }
 
 .copyright {
   display: -webkit-box;

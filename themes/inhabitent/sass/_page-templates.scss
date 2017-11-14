@@ -4,6 +4,26 @@
 
 /* Front page */
 
+//sidebar
+#primary {
+  padding-right: 5%;
+  padding-top: 50px;
+}
+
+#secondary {
+  padding-left: 5%;
+  border-left: 1px solid $brand_color_medium_grey;
+}
+
+.widget-title {
+  text-transform: uppercase;
+  width: 250px;
+}
+
+.textwidget {
+  font-family: $font_main;
+}
+
 // Journal Page
 .blog,
 .error404,
@@ -13,6 +33,42 @@
     display: flex;
   }
 } 
+
+.blog {
+  .site-content {
+    margin: auto;
+    display: flex;
+    .entry-header {
+      position: relative;
+      img {
+        width: 100%;
+      }
+      .entry-title {
+        background-color: $brand_color_green;
+        font-family: $font_accent;
+        text-transform: uppercase;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        a {
+          color: $color__background-screen;
+        }
+      }
+      
+      .entry-meta {
+        background-color: $brand_color_green;
+        font-family: $font_accent;
+        color: $color__background-screen;
+        text-align: center;
+        position: absolute;
+        right: 0;
+        bottom: 7px;
+      }
+    } 
+  }
+}
+
+
 
 /* header */
 .search-icon {
@@ -40,7 +96,8 @@
 	display: flex;
 	flex-direction: column;
 	font-family: $font_main;
-	text-decoration: none;
+  text-decoration: none;
+  width: 25%;
 	p {
 		font-family: $font_accent;
 		color: $brand_color_orange;
@@ -52,10 +109,11 @@
 
 .business-hours {
 		font-family: $font_main;
-		text-decoration: none;
+    text-decoration: none;
+    width: 25%;
 	p {
-		font-family: $font_accent;
-		color: $brand_color_orange;
+    font-family: $font_accent;
+    color: $brand_color_orange;
   } ul {
     margin: 0;
     padding: 0;
@@ -63,9 +121,13 @@
   li {
 		list-style-type: none;
   }
-  
+ }
 
-}
+ .inhabitent-logo {
+  width: 50%;
+  padding-top: 20px;
+} 
+
 .copyright {
   display: flex;
   justify-content: center;
