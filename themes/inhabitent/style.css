@@ -624,7 +624,10 @@ a {
 
 #content {
   width: 1120px;
-  margin: auto; }
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 /*--------------------------------------------------------------
 # Media
@@ -784,6 +787,7 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding: 2%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: #fff; }
@@ -801,14 +805,26 @@ object {
           flex-direction: column;
   font-family: "Merriweather", Helvetica, serif;
   text-decoration: none;
-  width: 25%; }
+  width: 25%;
+  padding: 0 20px; }
   .contact-info p {
     font-family: "Montserrat", Arial, sans-serif;
     color: #d99054; }
   .contact-info a {
-    color: #fff; }
+    color: #fff;
+    padding-left: 10px; }
+  .contact-info i {
+    color: white;
+    padding-right: 10px; }
 
 .business-hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "Merriweather", Helvetica, serif;
   text-decoration: none;
   width: 25%; }
@@ -816,14 +832,39 @@ object {
     font-family: "Montserrat", Arial, sans-serif;
     color: #d99054; }
   .business-hours ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0;
     padding: 0; }
   .business-hours li {
-    list-style-type: none; }
+    list-style-type: none;
+    margin: 20px 0; }
+
+.hours {
+  font-family: "Merriweather", Helvetica, serif;
+  font-weight: bold;
+  padding-right: 10px; }
 
 .inhabitent-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-right: -40px;
   width: 50%;
-  padding-top: 20px; }
+  padding-top: 50px; }
+  .inhabitent-logo img {
+    width: 45%; }
 
 .copyright {
   display: -webkit-box;
@@ -833,3 +874,6 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff; }
+
+#secondary {
+  display: none; }

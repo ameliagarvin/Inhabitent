@@ -106,6 +106,7 @@
 .site-info {
 	display: flex;
   flex-direction: row;
+  padding: 2%;
   justify-content: space-around;
 	color: $color__background-body;
 }
@@ -120,16 +121,25 @@
 	font-family: $font_main;
   text-decoration: none;
   width: 25%;
+  padding: 0 20px;
 	p {
 		font-family: $font_accent;
-		color: $brand_color_orange;
+    color: $brand_color_orange;
 	}
 	a {
-		color: $color__background-body;
-	}
+    color: $color__background-body;
+    padding-left: 10px;
+  }
+  i {
+    color: white;
+    padding-right: 10px;
+    
+  }
 }
 
 .business-hours {
+    display: flex;
+    flex-direction: column;
 		font-family: $font_main;
     text-decoration: none;
     width: 25%;
@@ -137,17 +147,33 @@
     font-family: $font_accent;
     color: $brand_color_orange;
   } ul {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
   }
   li {
-		list-style-type: none;
+    list-style-type: none;
+    margin: 20px 0;
   }
  }
 
+.hours {
+  font-family: $font_main;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
  .inhabitent-logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: -40px; 
   width: 50%;
-  padding-top: 20px;
+  padding-top: 50px;
+  img {
+    width: 45%;
+  }
 } 
 
 .copyright {
@@ -155,3 +181,10 @@
   justify-content: center;
   color: $color__background-body;
 }
+
+// about page
+
+#secondary {
+    display: none;
+  }
+
