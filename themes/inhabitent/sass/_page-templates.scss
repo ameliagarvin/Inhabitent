@@ -22,6 +22,27 @@
 
 .textwidget {
   font-family: $font_main;
+  .day-of-week {
+    font-weight: bold;
+  }
+}
+ 
+.widget.widget_archive {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  } a {
+    color: $brand_color_green; 
+  }
+}
+
+.contact-meta {
+  i {
+    padding-right: 15px;
+  } a {
+    color: $brand_color_green;
+  } 
 }
 
 // Journal Page
