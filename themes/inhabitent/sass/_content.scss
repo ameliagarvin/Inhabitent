@@ -53,34 +53,3 @@
 	margin: auto;
 }
 
-// footer styles
-footer {
-	display: flex;
-}
-
-.wood {
-	background-image: url("images/dark-wood.png");
-}
-
-.contact-info {
-	display: flex;
-	flex-direction: column;
-	font-family: $font_main;
-	text-decoration: none;
-	p {
-		font-family: $font_accent;
-		color: $brand_color_orange;
-	}
-}
-
-.business-hours {
-		font-family: $font_main;
-		text-decoration: none;
-	p {
-		font-family: $font_accent;
-		color: $brand_color_orange;
-	} li {
-		list-style-type: none;
-	}
-
-}

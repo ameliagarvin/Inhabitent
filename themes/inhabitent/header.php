@@ -32,12 +32,16 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation"> 
 				
 		   <div class="tent">
-				<img src="<?php echo get_stylesheet_directory_uri();?>/images/inhabitent-logo-tent-white.svg">;
+				<img src="<?php echo get_stylesheet_directory_uri();?>/images/inhabitent-logo-tent.svg">
         </div>
 <!-- put the search icon -->
-<i class="fa fa-search" aria-hidden="true"></i>
+        
+          
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+				<div class="search-icon">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</div>	
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

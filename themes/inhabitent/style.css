@@ -43,6 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -363,7 +364,7 @@ dd {
   margin: 0 1.5rem 1.5rem; }
 
 img {
-  height: 30px;
+  height: auto;
   /* Make sure images are scaled correctly. */
   max-width: 100%;
   /* Adhere to container width. */ }
@@ -461,8 +462,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  float: left;
-  width: 100%; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #666; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -488,11 +492,14 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
-    position: relative; }
+    position: relative;
+    padding: 0 20px; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #21759b;
+    font-family: "Montserrat", Arial, sans-serif;
+    text-transform: uppercase; }
 
 /* Small menu. */
 .menu-toggle,
@@ -503,7 +510,9 @@ a {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
-    display: block; } }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -523,6 +532,9 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.search-icon {
+  color: #21759b; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -637,37 +649,6 @@ a {
   width: 1120px;
   margin: auto; }
 
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.wood {
-  background-image: url("images/dark-wood.png"); }
-
-.contact-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-family: "Merriweater", Helvetica, serif;
-  text-decoration: none; }
-  .contact-info p {
-    font-family: "Montserrat", Arial, sans-serif;
-    color: #d99054; }
-
-.business-hours {
-  font-family: "Merriweater", Helvetica, serif;
-  text-decoration: none; }
-  .business-hours p {
-    font-family: "Montserrat", Arial, sans-serif;
-    color: #d99054; }
-  .business-hours li {
-    list-style-type: none; }
-
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -728,11 +709,85 @@ object {
 .gallery-caption {
   display: block; }
 
+.tent {
+  width: 40px;
+  margin-left: 70px; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.blog .site-content {
+.blog .site-content,
+.error404 .site-content,
+.page-id-72 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+/* header */
+.search-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* footer */
+.inhabitent-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #fff; }
+
+.wood {
+  width: 100%; }
+
+.contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Merriweather", Helvetica, serif;
+  text-decoration: none; }
+  .contact-info p {
+    font-family: "Montserrat", Arial, sans-serif;
+    color: #d99054; }
+  .contact-info a {
+    color: #fff; }
+
+.business-hours {
+  font-family: "Merriweather", Helvetica, serif;
+  text-decoration: none; }
+  .business-hours p {
+    font-family: "Montserrat", Arial, sans-serif;
+    color: #d99054; }
+  .business-hours ul {
+    margin: 0;
+    padding: 0; }
+  .business-hours li {
+    list-style-type: none; }
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff; }

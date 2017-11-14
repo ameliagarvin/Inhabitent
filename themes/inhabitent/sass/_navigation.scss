@@ -30,8 +30,9 @@ a {
 .main-navigation {
 	clear: both;
 	display: flex;
-	float: left;
+	justify-content: space-between;
 	width: 100%;
+	border-bottom: 1px solid #666;
 
 	ul {
 		display: none;
@@ -78,8 +79,8 @@ a {
 		}
 	}
 	li {
-		float: left;
 		position: relative;
+		padding: 0 20px;
 
 		&:hover > a,
 		&.focus > a {
@@ -88,6 +89,9 @@ a {
 	a {
 		display: block;
 		text-decoration: none;
+		color: $color__text-screen;
+		font-family: $font_accent;
+		text-transform: uppercase;
 	}
 
 	.current_page_item > a,
@@ -107,7 +111,7 @@ a {
 		display: none;
 	}
 	.main-navigation ul {
-		display: block;
+		display: flex;
 	}
 }
 
@@ -130,4 +134,8 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+}
+
+.search-icon {
+	color: $color__text-screen;
 }

@@ -5,9 +5,69 @@
 /* Front page */
 
 // Journal Page
-.blog {
+.blog,
+.error404,
+.page-id-72 {
   // color: green;
   .site-content {
     display: flex;
   }
 } 
+
+/* header */
+.search-icon {
+  display: flex;
+}
+
+/* footer */
+.inhabitent-footer {
+  display: flex;  
+  flex-direction: row;
+}
+
+.site-info {
+	display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+	color: $color__background-body;
+}
+
+.wood {
+	width: 100%;
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	font-family: $font_main;
+	text-decoration: none;
+	p {
+		font-family: $font_accent;
+		color: $brand_color_orange;
+	}
+	a {
+		color: $color__background-body;
+	}
+}
+
+.business-hours {
+		font-family: $font_main;
+		text-decoration: none;
+	p {
+		font-family: $font_accent;
+		color: $brand_color_orange;
+  } ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+		list-style-type: none;
+  }
+  
+
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  color: $color__background-body;
+}
