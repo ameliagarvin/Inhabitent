@@ -466,7 +466,12 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  border-bottom: 1px solid #666; }
+  border-bottom: 1px solid #e9e9e9;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 5;
+  padding: 10px;
+  top: 30px; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -723,7 +728,7 @@ object {
 
 #secondary {
   padding-left: 5%;
-  border-left: 1px solid #808080; }
+  border-left: 1px solid #e9e9e9; }
 
 .widget-title {
   text-transform: uppercase;
@@ -741,6 +746,7 @@ object {
 
 .blog .site-content {
   margin: auto;
+  padding-top: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }

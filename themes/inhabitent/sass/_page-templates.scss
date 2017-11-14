@@ -12,7 +12,7 @@
 
 #secondary {
   padding-left: 5%;
-  border-left: 1px solid $brand_color_medium_grey;
+  border-left: 1px solid $border_color;
 }
 
 .widget-title {
@@ -37,6 +37,7 @@
 .blog {
   .site-content {
     margin: auto;
+    padding-top: 28px;
     display: flex;
     .entry-header {
       position: relative;
