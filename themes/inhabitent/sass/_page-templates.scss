@@ -185,7 +185,59 @@
 // about page
 
 .page-id-66 {
-
+  .site-content {
+    .entry-header {
+      #secondary {
+        display: none;
+      }
+    }
+  }
 }
 
+.entry-header h1 {
+ display: flex;
+ justify-content: center;
+ color: $color__text-main;
+}
 
+.custom-hero {
+  width: auto;
+  height: 100vh;
+}
+
+header.entry-header.custom-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.entry-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: $font_main;
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-family: $font_accent;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 30px;
+  }
+}
+
+.container {
+  padding: 0px 100px;
+}
+
+p.p1 {
+  font-family: $font_main;
+  line-height: $font__line-height-body;
+  font-size: $font_size;
+}
+// .page-id-5 {
+//    #primary {
+//       display: none;
+//     }
+// }

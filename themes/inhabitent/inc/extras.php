@@ -68,7 +68,6 @@ if ( ! $image ) {
 }
 
 $hero_css = ".page-template-about .entry-header {
-	height: 100vh;
 	background:
 		linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%),
 		url({$image}) no-repeat center bottom;
