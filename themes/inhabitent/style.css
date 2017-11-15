@@ -696,7 +696,16 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
+/* Front page TODO remove sidebar*/
+.stories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none; }
+
+.home .site-content #secondary {
+  display: none; }
+
 #primary {
   padding-right: 5%;
   padding-top: 50px; }

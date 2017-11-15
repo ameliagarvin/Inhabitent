@@ -2,7 +2,21 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+/* Front page TODO remove sidebar*/
+
+.stories {
+  display: flex;
+  list-style: none;
+}
+
+.home {
+  .site-content {
+    #secondary {
+      display: none;
+    }
+  }
+}
+
 
 //sidebar
 #primary {
@@ -182,7 +196,7 @@
   color: $color__background-body;
 }
 
-// about page
+// about page TODO adjust hero image size
 
 .page-id-66 {
   .site-content {
