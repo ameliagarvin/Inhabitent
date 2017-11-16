@@ -7,14 +7,22 @@
 
  get_header(); ?>
  
-   <div id="primary" class="content-area">
-     <main id="main" class="site-main" role="main">
-      <article id="post-<? the_ID(); ?>" <?php post_class(); ?>>
-        <header class="entry-header custom-hero">
+
+ 
+   <div id="primary" class="content-area"> 
+
+   <header class="entry-header custom-hero">
           <div class="container">
             <?php the_title( '<h1 class="entry-level">', '</h1>'); ?>
           </div>
         </header>
+        
+     <main id="main" class="site-main" role="main">
+
+    
+
+      <article id="post-<? the_ID(); ?>" <?php post_class(); ?>>
+      
 
         <div class="container">
           <div class="entry-content">
@@ -26,6 +34,7 @@
           </div>
         </div>
        </article>
+
       </main>
     </div>
   <?php get_footer(); ?>        

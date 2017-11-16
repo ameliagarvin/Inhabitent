@@ -703,8 +703,11 @@ object {
   display: flex;
   list-style: none; }
 
-.home .site-content #secondary {
-  display: none; }
+.home .site-header {
+  background: green;
+  min-height: 100vh;
+  background-image: url("../../images/home-hero.jpg");
+  background-size: cover; }
 
 #primary {
   padding-right: 5%;

@@ -10,13 +10,13 @@
 }
 
 .home {
-  .site-content {
-    #secondary {
-      display: none;
-    }
+  .site-header {
+    background: green;
+    min-height: 100vh;
+    background-image: url('../../images/home-hero.jpg');
+    background-size: cover;
   }
 }
-
 
 //sidebar
 #primary {
