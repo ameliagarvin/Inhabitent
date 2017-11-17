@@ -6,7 +6,10 @@
  */
 
 get_header(); ?>
-
+ 
+ <div class="Shop stuff">
+              <h2>shop stuff</h2>
+            </div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -36,14 +39,18 @@ get_header(); ?>
                </div>
                
             <?php endif; ?>
-			<?php /* Start the Loop */ ?>
+
+           
+      <?php /* Start the Loop */ ?>
+      
+      <ul>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			
 
-<header class="page-header">
+<li class="page-header">
 				<?php
-          the_archive_title( '<h1 class="page-title">', '</h1>' );
+         
           echo CFS()->get('price');
 
            if ( has_post_thumbnail() ) : ?>
@@ -54,9 +61,10 @@ get_header(); ?>
         <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
           
 				
-			</header>
+               </li>
 
-			<?php endwhile; ?>
+      <?php endwhile; ?>
+               </ul>
 
 			<?php the_posts_navigation(); ?>
 

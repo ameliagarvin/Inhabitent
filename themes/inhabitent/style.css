@@ -1033,8 +1033,12 @@ p.p1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: none; }
+    border-bottom: 1px dashed #c8c8c8; }
   .archive .site-content .product-type-block-wrapper {
     border: none; }
-  .archive .site-content .btn {
-    background-color: #FFF; }
+  .archive .site-content a.btn {
+    background-color: #FFF;
+    color: #21759b; }
+
+.page-header .page-title h1 {
+  display: none; }

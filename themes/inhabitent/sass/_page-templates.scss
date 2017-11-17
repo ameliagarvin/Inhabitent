@@ -336,11 +336,20 @@ p.p1 {
     .product-type-blocks {
       display: flex;
       justify-content: center;
-      border: none;
+      border-bottom: 1px dashed #c8c8c8;;
     } .product-type-block-wrapper{
       border: none;
-    } .btn {
+    } a.btn {
       background-color: #FFF; 
+      color: $color__text-screen;
+    }
+  }
+}
+
+.page-header {
+  .page-title {
+    h1 {
+      display: none;
     }
   }
 }
