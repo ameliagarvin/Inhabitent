@@ -4,16 +4,30 @@
 
 /* Front page*/
 
+// .st
 .stories {
-  display: flex;
-  list-style: none;
+ display: flex;
+ justify-content: space-between;
+ color: $color__text-screen;
+ list-style: none;
+} ul {
+  justify-content: space-around;
 }
+
+.journal-title {
+  font-family: $font_accent;
+}
+
 
 .home {
   .site-header {
     min-height: 100vh;
     background-image: url('../../images/home-hero.jpg');
     background-size: cover;
+  } #content {
+    width: 1024px;
+  } .container {
+    width: 1024px;
   }
 }
 

@@ -701,12 +701,29 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #21759b;
   list-style: none; }
+
+ul {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.journal-title {
+  font-family: "Montserrat", Arial, sans-serif; }
 
 .home .site-header {
   min-height: 100vh;
   background-image: url("../../images/home-hero.jpg");
   background-size: cover; }
+
+.home #content {
+  width: 1024px; }
+
+.home .container {
+  width: 1024px; }
 
 .product-info.container h2 {
   display: -webkit-box;
