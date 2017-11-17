@@ -4,20 +4,43 @@
 
 /* Front page*/
 
-// .st
-.stories {
- display: flex;
- justify-content: space-between;
- color: $color__text-screen;
- list-style: none;
-} ul {
-  justify-content: space-around;
+// 
+
+.home {
+  .stories {
+    display: flex;
+    list-style: none;
+   } ul {
+   } li {
+    //  border: $solid_border;
+    //  border-top: 5px solid #e1e1e1;
+    //  margin: 1%;
+   }
+}
+
+.inhabitent-journal-title {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+h2.inhabitent-adventures {
+  @extend .inhabitent-journal-title;
 }
 
 .journal-title {
   font-family: $font_accent;
 }
 
+.read-entry {
+  display: flex;
+  text-transform: uppercase;
+  color: teal;
+  a {
+    justify-content: center;
+    
+  }
+}
 
 .home {
   .site-header {
@@ -137,6 +160,8 @@
           color: $color__background-screen;
         }
       }
+
+     
       
       .entry-meta {
         background-color: $brand_color_green;
@@ -302,3 +327,20 @@ p.p1 {
 //       display: none;
 //     }
 // }
+
+
+// archive page
+.archive {
+  .site-content {
+    display: flex;
+    .product-type-blocks {
+      display: flex;
+      justify-content: center;
+      border: none;
+    } .product-type-block-wrapper{
+      border: none;
+    } .btn {
+      background-color: #FFF; 
+    }
+  }
+}

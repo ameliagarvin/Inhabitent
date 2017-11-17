@@ -697,22 +697,34 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page*/
-.stories {
+.home .stories {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #21759b;
   list-style: none; }
 
-ul {
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+.inhabitent-journal-title, h2.inhabitent-adventures {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .journal-title {
   font-family: "Montserrat", Arial, sans-serif; }
+
+.read-entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  color: teal; }
+  .read-entry a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 .home .site-header {
   min-height: 100vh;
@@ -1009,3 +1021,20 @@ p.p1 {
   font-family: "Merriweather", Helvetica, serif;
   line-height: 1.5;
   font-size: 16px; }
+
+.archive .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .archive .site-content .product-type-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: none; }
+  .archive .site-content .product-type-block-wrapper {
+    border: none; }
+  .archive .site-content .btn {
+    background-color: #FFF; }

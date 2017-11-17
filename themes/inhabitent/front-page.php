@@ -69,7 +69,7 @@ get_header(); ?>
             <?php endif; ?>
          </section>
  
- 
+   <h2 class="inhabitent-journal-title">inhabitent journal</h2>
  
  <ul class="stories"> 
 <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
@@ -85,7 +85,7 @@ get_header(); ?>
 <?php endforeach; wp_reset_postdata(); ?>
 </ul>
  
-
+  <h2 class="inhabitent-adventures">latest adventures</h2>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
