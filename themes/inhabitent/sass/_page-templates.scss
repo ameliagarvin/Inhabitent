@@ -2,7 +2,7 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page TODO remove sidebar*/
+/* Front page*/
 
 .stories {
   display: flex;
@@ -11,13 +11,29 @@
 
 .home {
   .site-header {
-    background: green;
     min-height: 100vh;
     background-image: url('../../images/home-hero.jpg');
     background-size: cover;
   }
 }
 
+.product-type-blocks {
+  display: flex;
+   .product-type-block-wrapper {
+     margin: 10px;
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border: $solid_border;
+     border-top: 3px solid #e1e1e1;
+     img {
+       width: 40%;
+       margin: auto;
+     }
+   }
+}
 //sidebar
 #primary {
   padding-right: 5%;

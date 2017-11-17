@@ -32,7 +32,9 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation"> 
 				
 		   <div class="tent">
+				<a href="/inhabitent" rel="home">
 				<img src="<?php echo get_stylesheet_directory_uri();?>/images/inhabitent-logo-tent.svg">
+        </a>
         </div>
 <!-- put the search icon -->
         
