@@ -17,6 +17,14 @@
   }
 }
 
+.product-info.container h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
 .product-type-blocks {
   display: flex;
    .product-type-block-wrapper {
@@ -31,9 +39,18 @@
      img {
        width: 40%;
        margin: auto;
-     }
+     } a.btn {
+      background-color: $brand_color_green;
+      width: 30px;
+      color: #FFF;
+      padding: .75rem 1.5rem;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
    }
 }
+
+
 //sidebar
 #primary {
   padding-right: 5%;
