@@ -333,6 +333,10 @@ p.p1 {
 .archive {
   .site-content {
     display: flex;
+    flex-direction: column;
+    #primary {
+      padding-top: 0px;
+    }
     .product-type-blocks {
       display: flex;
       justify-content: center;
@@ -346,10 +350,28 @@ p.p1 {
   }
 }
 
-.page-header {
-  .page-title {
-    h1 {
-      display: none;
-    }
-  }
+.shop-stuff {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  font-family: $font_accent;
+  font-size: 1.5em;
 }
+
+.product-name {
+  display: flex;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  } li {
+    max-width: 22%;
+  }
+} 

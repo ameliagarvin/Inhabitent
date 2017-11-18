@@ -1025,7 +1025,13 @@ p.p1 {
 .archive .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .archive .site-content #primary {
+    padding-top: 0px; }
   .archive .site-content .product-type-blocks {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1040,5 +1046,38 @@ p.p1 {
     background-color: #FFF;
     color: #21759b; }
 
-.page-header .page-title h1 {
-  display: none; }
+.shop-stuff {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.5em; }
+
+.product-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.product-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .product-container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .product-container li {
+    max-width: 22%; }

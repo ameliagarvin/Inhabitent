@@ -7,7 +7,7 @@
 
 get_header(); ?>
  
- <div class="Shop stuff">
+ <div class="shop-stuff">
               <h2>shop stuff</h2>
             </div>
 	<div id="primary" class="content-area">
@@ -42,7 +42,7 @@ get_header(); ?>
 
            
       <?php /* Start the Loop */ ?>
-      
+      <div class="product-container">
       <ul>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -51,20 +51,23 @@ get_header(); ?>
 <li class="page-header">
 				<?php
          
-          echo CFS()->get('price');
+          
 
            if ( has_post_thumbnail() ) : ?>
 
-          <?php the_post_thumbnail( 'large' ); ?>
+<a href="%s" rel="bookmark"><?php  the_post_thumbnail( 'large' ); ?></a>
         <?php endif; ?>
-    
-        <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-          
-				
+     
+        <div class="product-name">
+        <?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ),'......', '</h2>' ) ; 
+        ?>
+        <?php echo CFS()->get('price'); ?>
+        </div>
                </li>
-
+               
       <?php endwhile; ?>
                </ul>
+               </div>
 
 			<?php the_posts_navigation(); ?>
 
