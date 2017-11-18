@@ -85,7 +85,45 @@ get_header(); ?>
 <?php endforeach; wp_reset_postdata(); ?>
 </ul>
  
-  <h2 class="inhabitent-adventures">latest adventures</h2>
+<!-- Adventures section -->
+	<h2 class="inhabitent-adventures">latest adventures</h2>
+	
+	<section class="adventure-container">
+		<ul>
+			<li>
+			  <div class="canoe">
+				<div class"adventure-info">
+					<h3>Getting Back to Nature in a Canoe</h3>
+					<button name="button">read more</button>
+				</div>
+			</li>
+
+			<li>
+			  <div class="fire">
+				<div class"adventure-info">
+					<h3>A Night with Friends at the Beach</h3>
+					<button name="button">read more</button>
+				</div>
+			</li>
+
+			<li>
+			  <div class="mountain">
+				<div class"adventure-info">
+					<h3>Taking in the View at Big Mountain</h3>
+					<button name="button">read more</button>
+				</div>
+			</li>
+
+			<li>
+			  <div class="star">
+				<div class"adventure-info">
+					<h3>Star-Gazing at the Night Sky</h3>
+					<button name="button">read more</button>
+				</div>
+			</li>
+
+		</ul>
+	</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

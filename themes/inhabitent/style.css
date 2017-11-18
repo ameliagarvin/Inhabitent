@@ -703,6 +703,11 @@ object {
   display: flex;
   list-style: none; }
 
+.canoe {
+  background-image: url(../../images/canoe-girl.jpg);
+  background-size: cover;
+  width: 200px; }
+
 .inhabitent-journal-title, h2.inhabitent-adventures {
   text-transform: uppercase;
   display: -webkit-box;

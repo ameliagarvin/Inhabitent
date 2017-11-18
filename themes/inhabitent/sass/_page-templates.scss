@@ -10,12 +10,13 @@
   .stories {
     display: flex;
     list-style: none;
-   } ul {
-   } li {
-    //  border: $solid_border;
-    //  border-top: 5px solid #e1e1e1;
-    //  margin: 1%;
-   }
+   } 
+}
+
+.canoe {
+  background-image: url(../../images/canoe-girl.jpg);
+  background-size: cover;
+  width: 200px;
 }
 
 .inhabitent-journal-title {
