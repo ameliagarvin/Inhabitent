@@ -13,10 +13,12 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+		
+				
+			
+					
+			
+				
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
@@ -24,18 +26,26 @@ get_header(); ?>
 
 				<?php
 					get_template_part( 'template-parts/content' );
-				?>
+				?> 
+ 	    
+			
+			<p><?php echo CFS()->get('price'); ?></p>
+		
 
+			
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+		
 
 		<?php endif; ?>
-
+    <div class="social-media">
+		<button class="social-media-button"><i class="fa fa-facebook" aria-hidden="true"></i>like</button>
+		<button class="social-media-button"><i class="fa fa-twitter" aria-hidden="true">tweet</i></button>
+		<button class="social-media-button"><i class="fa fa-pinterest" aria-hidden="true">pin</i></button>
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

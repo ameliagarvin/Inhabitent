@@ -1140,6 +1140,25 @@ p.p1 {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    list-style: none;
+    margin-top: 5%; }
   .product-container li {
-    max-width: 22%; }
+    max-width: 22%;
+    border: 1px solid #e1e1e1;
+    margin: 10px; }
+  .product-container img {
+    border-bottom: 4px solid #e1e1e1; }
+
+article#post-122 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  article#post-122 .entry-content {
+    margin-left: 10%; }
+  article#post-122 p {
+    font-family: "Merriweather", Helvetica, serif;
+    font-weight: 100; }
+
+h2.entry-title a {
+  color: #d99054; }

@@ -441,7 +441,29 @@ p.p1 {
   ul {
     display: flex;
     flex-wrap: wrap;
+    list-style: none;
+    margin-top: 5%;
   } li {
     max-width: 22%;
-  }
+    border: $solid_border;
+    margin: 10px;
+  } img {
+    border-bottom: 4px solid #e1e1e1;
+  } 
 } 
+// individual product posts
+
+article#post-122 {
+  display: flex;
+ .entry-content {
+   margin-left: 10%;
+ } p {
+   font-family: $font_main;
+   font-weight: 100;
+ }
+} h2.entry-title {
+    a {
+      color: $brand_color_orange;
+    } 
+    
+}

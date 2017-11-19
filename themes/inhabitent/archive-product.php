@@ -64,6 +64,8 @@ get_header(); ?>
         <?php echo CFS()->get('price'); ?>
         </div>
                </li>
+
+               <?php get_template_part( 'template-parts/content' ); ?>
                
       <?php endwhile; ?>
                </ul>
