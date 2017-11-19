@@ -513,6 +513,17 @@ a {
 .search-icon {
   color: #21759b; }
 
+.social-media button.social-media-button {
+  background-color: transparent;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  text-transform: uppercase; }
+
+.social-media i {
+  margin-right: 10px; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -911,6 +922,52 @@ object {
       position: absolute;
       right: 0;
       bottom: 7px; }
+
+.postid-47 .site-content,
+.postid-45 .site-content,
+.postid-42 .site-content,
+.postid-49 .site-content,
+.postid-51 .site-content {
+  width: 1120px; }
+  .postid-47 .site-content .entry-header img,
+  .postid-45 .site-content .entry-header img,
+  .postid-42 .site-content .entry-header img,
+  .postid-49 .site-content .entry-header img,
+  .postid-51 .site-content .entry-header img {
+    width: 100%; }
+  .postid-47 .site-content .entry-header .entry-meta,
+  .postid-45 .site-content .entry-header .entry-meta,
+  .postid-42 .site-content .entry-header .entry-meta,
+  .postid-49 .site-content .entry-header .entry-meta,
+  .postid-51 .site-content .entry-header .entry-meta {
+    background-color: #248A83;
+    color: white;
+    font-family: "Montserrat", Arial, sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    left: 473px;
+    bottom: 13px;
+    padding: 5px 10px; }
+  .postid-47 .site-content .entry-header a,
+  .postid-45 .site-content .entry-header a,
+  .postid-42 .site-content .entry-header a,
+  .postid-49 .site-content .entry-header a,
+  .postid-51 .site-content .entry-header a {
+    color: white; }
+  .postid-47 .site-content .entry-header .entry-title,
+  .postid-45 .site-content .entry-header .entry-title,
+  .postid-42 .site-content .entry-header .entry-title,
+  .postid-49 .site-content .entry-header .entry-title,
+  .postid-51 .site-content .entry-header .entry-title {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 2.1em;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    left: 143px;
+    width: 50%;
+    background-color: #248A83;
+    color: white; }
 
 /* header */
 .search-icon {

@@ -231,9 +231,7 @@ h2.inhabitent-adventures {
         }
       }
 
-     
-      
-      .entry-meta {
+     .entry-meta {
         background-color: $brand_color_green;
         font-family: $font_accent;
         color: $color__background-screen;
@@ -246,7 +244,45 @@ h2.inhabitent-adventures {
   }
 }
 
+// individual journal page
 
+.postid-47, 
+.postid-45,
+.postid-42,
+.postid-49,
+.postid-51 {
+  .site-content {
+    width: 1120px;
+    .entry-header {
+      img {
+        width: 100%;
+      }
+      .entry-meta {
+        background-color: $brand_color_green;
+        color: white;
+        font-family: $font_accent;
+        text-transform: uppercase;
+        position: absolute;
+        left: 473px;
+        bottom: 13px;
+        padding: 5px 10px;
+      } a {
+        color: white;
+      }
+      .entry-title {
+        font-family: $font_accent;
+        font-size: 2.1em;
+        text-transform: uppercase;
+        position: absolute;
+        top: 100px;
+        left: 143px;
+        width: 50%;
+        background-color: $brand_color_green;
+        color: white;
+      } 
+    }
+  }
+}
 
 /* header */
 .search-icon {
@@ -465,5 +501,5 @@ article#post-122 {
     a {
       color: $brand_color_orange;
     } 
-    
 }
+

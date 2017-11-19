@@ -144,3 +144,17 @@ a {
 .search-icon {
 	color: $color__text-screen;
 }
+
+.social-media {
+		button.social-media-button {
+		background-color: transparent;
+		background-color: transparent;
+    border: 1px solid black;
+		border-radius: 0;
+		font-family: $font_accent;
+		text-transform: uppercase;
+	} i {
+		margin-right: 10px;
+	} 
+	
+}
