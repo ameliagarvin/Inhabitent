@@ -297,6 +297,22 @@ h2.inhabitent-adventures {
   }
 }
 
+.postid-47, 
+.postid-45,
+.postid-42,
+.postid-49,
+.postid-51 {
+  .site-content {
+   .entry-footer {
+     text-transform: uppercase;
+     .tag-links {
+       a {
+         color: $brand_color_green;
+       }
+     }
+   }
+  }
+}
 /* header */
 .search-icon {
   display: flex;
@@ -422,6 +438,8 @@ header.entry-header.custom-hero {
   flex-direction: column;
   justify-content: center;
   font-family: $font_main;
+  line-height: 2em;
+  font-size: $font_size;
   h2 {
     display: flex;
     justify-content: center;
