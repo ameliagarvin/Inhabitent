@@ -13,10 +13,54 @@
    } 
 }
 
+// adventure section
+
+.adventure-container {
+  display: flex;  
+  flex-wrap: wrap;
+  ul {
+    list-style: none;
+  } li {
+    width: 200px;
+  }
+}
+
+.adventure-info {
+  button {
+    background-color: transparent;
+  }
+}
 .canoe {
-  background-image: url(../../images/canoe-girl.jpg);
-  background-size: cover;
-  width: 200px;
+  background:   
+  linear-gradient(
+    rgba(0,0,0, 0.3),
+    rgba(0,0,0,0.3)), url(../../images/canoe-girl.jpg) center no-repeat;
+  background-size: cover; 
+
+}
+
+.fire {
+  background:   
+  linear-gradient(
+    rgba(0,0,0, 0.3),
+    rgba(0,0,0,0.3)), url(../../images/beach-bonfire.jpg) center no-repeat;
+  background-size: cover; 
+}
+
+.mountain {
+  background:   
+  linear-gradient(
+    rgba(0,0,0, 0.3),
+    rgba(0,0,0,0.3)), url(../../images/mountain-hikers.jpg) center no-repeat;
+  background-size: cover; 
+}
+
+.star {
+  background:   
+  linear-gradient(
+    rgba(0,0,0, 0.3),
+    rgba(0,0,0,0.3)), url(../../images/night-sky.jpg) center no-repeat;
+  background-size: cover; 
 }
 
 .inhabitent-journal-title {
