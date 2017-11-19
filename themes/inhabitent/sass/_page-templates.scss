@@ -18,25 +18,47 @@
 .adventure-container {
   display: flex;  
   flex-wrap: wrap;
+  width: 1120px;
+  height: 500px;
   ul {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
-  } li {
-    width: 200px;
+    width: 100%;
+  } li:first-child {
+    width: 50%;
+    height: 100%;
+  } li:nth-child(2) {
+    width: 50%;
+  } li:nth-child(3) {
+    width: 25%;
+  } li:last-child {
+    width: 25%;
   }
 }
 
 .adventure-info {
-  button {
-    background-color: transparent;
+  h3 {
+    color: white;
+    font-family: $font_main;
+    font-weight: 100;
+  } a {
+    color: white;
+    font-family: $font_accent;
+    text-transform: uppercase;
+    border: $solid_border;
+    padding: 2%;
   }
 }
+// adventure images
+
 .canoe {
   background:   
   linear-gradient(
     rgba(0,0,0, 0.3),
     rgba(0,0,0,0.3)), url(../../images/canoe-girl.jpg) center no-repeat;
   background-size: cover; 
-
+  width: 50%;
 }
 
 .fire {
@@ -45,6 +67,7 @@
     rgba(0,0,0, 0.3),
     rgba(0,0,0,0.3)), url(../../images/beach-bonfire.jpg) center no-repeat;
   background-size: cover; 
+  width: 50%;
 }
 
 .mountain {
@@ -53,6 +76,7 @@
     rgba(0,0,0, 0.3),
     rgba(0,0,0,0.3)), url(../../images/mountain-hikers.jpg) center no-repeat;
   background-size: cover; 
+  width: 25%;
 }
 
 .star {
@@ -61,6 +85,7 @@
     rgba(0,0,0, 0.3),
     rgba(0,0,0,0.3)), url(../../images/night-sky.jpg) center no-repeat;
   background-size: cover; 
+  width: 25%;
 }
 
 .inhabitent-journal-title {

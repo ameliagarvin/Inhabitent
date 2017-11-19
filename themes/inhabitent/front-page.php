@@ -92,7 +92,7 @@ get_header(); ?>
 		<ul>
 			<li>
 			  <div class="canoe">
-				<div class"adventure-info">
+				<div class="adventure-info">
 					<h3>Getting Back to Nature in a Canoe</h3>
 				<a href ="#">read more</a>
 				</div>
@@ -100,25 +100,25 @@ get_header(); ?>
 
 			<li>
 			  <div class="fire">
-				<div class"adventure-info">
+				<div class="adventure-info">
 					<h3>A Night with Friends at the Beach</h3>
-					<a href ="#">>read more</a>
+					<a href ="#">read more</a>
 				</div>
 			</li>
 
 			<li>
 			  <div class="mountain">
-				<div class"adventure-info">
+				<div class="adventure-info">
 					<h3>Taking in the View at Big Mountain</h3>
-					<a href ="#">>read more</a>
+					<a href ="#">read more</a>
 				</div>
 			</li>
 
 			<li>
 			  <div class="star">
-				<div class"adventure-info">
+				<div class="adventure-info">
 					<h3>Star-Gazing at the Night Sky</h3>
-					<a href ="#">>read more</a>
+					<a href ="#">read more</a>
 				</div>
 			</li>
 
