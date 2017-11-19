@@ -157,6 +157,19 @@ h2.inhabitent-adventures {
    }
 }
 
+.social-media-journal {
+  a {
+    border: 1px solid black;
+    padding: 10px 30px;
+    color: black;
+    font-family: $font_accent;
+    text-transform: uppercase;
+    margin-left: 10px;
+  } i {
+    color: black;
+    margin-right: 10px;
+  } 
+}
 
 //sidebar
 #primary {
