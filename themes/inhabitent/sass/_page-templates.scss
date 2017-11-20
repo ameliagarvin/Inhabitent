@@ -18,6 +18,7 @@ ul.stories {
   list-style: none;
  } li.storie-items {
    border: $solid_border;
+   margin-bottom: 20px;
  } .posted-on {
    color: black;
    font-family: $font_main;
@@ -37,6 +38,16 @@ ul.stories {
    }
  }
 
+.posted-on {
+  .read {
+    a {
+      border: 1px solid #000;
+      padding: 10px 20px;
+      font-family: $font_accent;
+      text-transform: uppercase;
+    }
+  }
+}
 // adventure section
 
 .adventure-container {
@@ -54,10 +65,13 @@ ul.stories {
     height: 100%;
   } li:nth-child(2) {
     width: 50%;
+    height: 50%;
   } li:nth-child(3) {
     width: 25%;
+    height: 50%;
   } li:last-child {
     width: 25%;
+    height: 50%;
   }
 }
 
@@ -66,6 +80,8 @@ ul.stories {
     color: white;
     font-family: $font_main;
     font-weight: 100;
+    position: absolute;
+    margin: 20px;
   } a {
     color: white;
     font-family: $font_accent;
@@ -82,7 +98,8 @@ ul.stories {
     rgba(0,0,0, 0.3),
     rgba(0,0,0,0.3)), url(../../images/canoe-girl.jpg) center no-repeat;
   background-size: cover; 
-  width: 50%;
+  height: 500px;
+  position: relative;
 }
 
 .fire {
@@ -91,7 +108,6 @@ ul.stories {
     rgba(0,0,0, 0.3),
     rgba(0,0,0,0.3)), url(../../images/beach-bonfire.jpg) center no-repeat;
   background-size: cover; 
-  width: 50%;
 }
 
 .mountain {
@@ -100,7 +116,6 @@ ul.stories {
     rgba(0,0,0, 0.3),
     rgba(0,0,0,0.3)), url(../../images/mountain-hikers.jpg) center no-repeat;
   background-size: cover; 
-  width: 25%;
 }
 
 .star {
@@ -109,7 +124,6 @@ ul.stories {
     rgba(0,0,0, 0.3),
     rgba(0,0,0,0.3)), url(../../images/night-sky.jpg) center no-repeat;
   background-size: cover; 
-  width: 25%;
 }
 
 .inhabitent-journal-title {

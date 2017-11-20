@@ -82,11 +82,11 @@ get_header(); ?>
 	<div class="posted-on">
 	
 	<span class="journal-meta"><?php red_starter_posted_on(); ?> /
-	<a href="<?php the_permalink(); ?>"><?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> 
+	<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> 
 	</span>
 
-	<div class="journal-title"><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></h2></div>
-  <div class ="read-entry"><a href="<?php the_permalink(); ?>">Read entry</a></div>
+	<div class="journal-title"><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2></div>
+  <div class ="read"><a href="<?php the_permalink(); ?>">Read entry</a></div>
 	
 </div>
 

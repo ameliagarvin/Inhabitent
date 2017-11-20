@@ -731,7 +731,8 @@ ul.stories {
   list-style: none; }
 
 li.storie-items {
-  border: 1px solid #e1e1e1; }
+  border: 1px solid #e1e1e1;
+  margin-bottom: 20px; }
 
 .posted-on, a {
   color: black;
@@ -745,6 +746,12 @@ li.storie-items {
   font-family: "Montserrat", Arial, sans-serif;
   text-transform: uppercase;
   margin: 0px; }
+
+.posted-on .read a, a .read a {
+  border: 1px solid #000;
+  padding: 10px 20px;
+  font-family: "Montserrat", Arial, sans-serif;
+  text-transform: uppercase; }
 
 .adventure-container {
   display: -webkit-box;
@@ -766,16 +773,21 @@ li.storie-items {
     width: 50%;
     height: 100%; }
   .adventure-container li:nth-child(2) {
-    width: 50%; }
+    width: 50%;
+    height: 50%; }
   .adventure-container li:nth-child(3) {
-    width: 25%; }
+    width: 25%;
+    height: 50%; }
   .adventure-container li:last-child {
-    width: 25%; }
+    width: 25%;
+    height: 50%; }
 
 .adventure-info h3 {
   color: white;
   font-family: "Merriweather", Helvetica, serif;
-  font-weight: 100; }
+  font-weight: 100;
+  position: absolute;
+  margin: 20px; }
 
 .adventure-info a {
   color: white;
@@ -788,25 +800,23 @@ li.storie-items {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/canoe-girl.jpg) center no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/canoe-girl.jpg) center no-repeat;
   background-size: cover;
-  width: 50%; }
+  height: 500px;
+  position: relative; }
 
 .fire {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/beach-bonfire.jpg) center no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/beach-bonfire.jpg) center no-repeat;
-  background-size: cover;
-  width: 50%; }
+  background-size: cover; }
 
 .mountain {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/mountain-hikers.jpg) center no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/mountain-hikers.jpg) center no-repeat;
-  background-size: cover;
-  width: 25%; }
+  background-size: cover; }
 
 .star {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/night-sky.jpg) center no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/night-sky.jpg) center no-repeat;
-  background-size: cover;
-  width: 25%; }
+  background-size: cover; }
 
 .inhabitent-journal-title, h2.inhabitent-adventures {
   text-transform: uppercase;
