@@ -100,43 +100,43 @@ get_header(); ?>
 <!-- Adventures section -->
 	<h2 class="inhabitent-adventures">latest adventures</h2>
 	
-	<section class="adventure-container">
-		<ul>
-			<li>
-			  <div class="canoe">
-				<div class="adventure-info">
+	<div class= "adventure-section">
+
+ 
+    <div class="canoe">
+			<div class="adventure-info">
 					<h3>Getting Back to Nature in a Canoe</h3>
-				<a href ="#">read more</a>
-				</div>
-			</li>
+				  	<a class= "read-more" href ="#">read more</a>
+			</div>
+		</div>
 
-			<li>
-			  <div class="fire">
-				<div class="adventure-info">
+    <div class="fire">
+		  <div class="adventure-info">
 					<h3>A Night with Friends at the Beach</h3>
-					<a href ="#">read more</a>
-				</div>
-			</li>
+				  	<a class= "read-more" href ="#">read more</a>
+			</div>
+		</div>
 
-			<li>
-			  <div class="mountain">
-				<div class="adventure-info">
+    <div class="mountain">
+		<div class="mountain-info">
 					<h3>Taking in the View at Big Mountain</h3>
-					<a href ="#">read more</a>
-				</div>
-			</li>
+				  	<a class= "read-more" href ="#">read more</a>
+			</div>
+		</div>
 
-			<li>
-			  <div class="star">
-				<div class="adventure-info">
+    <div class="bonfire">
+			<div class="bonfire-info">
 					<h3>Star-Gazing at the Night Sky</h3>
-					<a href ="#">read more</a>
-				</div>
-			</li>
+				  	<a class= "read-more" href ="#">read more</a>
+		 	</div>
+		</div>
+		 
+</div>
+	
 
-		</ul>
-	</section>
-
+<p class="more-adventures">more adventures</p>
+		
+       
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

@@ -65,7 +65,6 @@ get_header(); ?>
         </div>
                </li>
 
-               <?php get_template_part( 'template-parts/content' ); ?>
                
       <?php endwhile; ?>
                </ul>
