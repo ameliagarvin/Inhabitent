@@ -71,19 +71,31 @@ get_header(); ?>
  
    <h2 class="inhabitent-journal-title">inhabitent journal</h2>
  
+	 
  <ul class="stories"> 
 <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
-  <li>
+  <li class="storie-items">
 	
-	<div class="journal-post"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'large', '' )?></div>
-	<div class="posted-on"><?php red_starter_posted_on(); ?></div> /
-	<div class="comments"><a href="<?php the_permalink(); ?>"><?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></div> 
-	<div class="journal-title"><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?> </h2></div>
+	<div class="journal-post">
+	<?php the_post_thumbnail( 'large', '' )?></div>
+
+	<div class="posted-on">
+	
+	<span class="journal-meta"><?php red_starter_posted_on(); ?> /
+	<a href="<?php the_permalink(); ?>"><?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> 
+	</span>
+
+	<div class="journal-title"><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></h2></div>
   <div class ="read-entry"><a href="<?php the_permalink(); ?>">Read entry</a></div>
-	</li>
+	
+</div>
+
+
+</li>
 
 <?php endforeach; wp_reset_postdata(); ?>
 </ul>
+							 
  
 <!-- Adventures section -->
 	<h2 class="inhabitent-adventures">latest adventures</h2>

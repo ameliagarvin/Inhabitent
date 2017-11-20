@@ -419,8 +419,6 @@ textarea {
 a {
   color: royalblue;
   text-decoration: none; }
-  a:visited {
-    color: purple; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -708,11 +706,45 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page*/
-.home .stories {
+#main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+ul.stories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none; }
+
+li.storie-items {
+  border: 1px solid #e1e1e1; }
+
+.posted-on, a {
+  color: black;
+  font-family: "Merriweather", Helvetica, serif;
+  font-size: 12px;
+  margin: 2px; }
+
+.journal-title h2 a {
+  color: #248A83;
+  font-size: 20px;
+  font-family: "Montserrat", Arial, sans-serif;
+  text-transform: uppercase;
+  margin: 0px; }
 
 .adventure-container {
   display: -webkit-box;
@@ -783,7 +815,11 @@ object {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #000; }
 
 .journal-title {
   font-family: "Montserrat", Arial, sans-serif; }
@@ -821,8 +857,10 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 30px;
-  text-transform: uppercase; }
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 300; }
 
 .product-type-blocks {
   display: -webkit-box;

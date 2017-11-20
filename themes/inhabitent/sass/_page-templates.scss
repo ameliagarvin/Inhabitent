@@ -4,14 +4,38 @@
 
 /* Front page*/
 
-// 
 
-.home {
-  .stories {
-    display: flex;
-    list-style: none;
-   } 
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+  
+ul.stories {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+ } li.storie-items {
+   border: $solid_border;
+ } .posted-on {
+   color: black;
+   font-family: $font_main;
+   font-size: 12px;
+   margin: 2px;
+ } a {
+   @extend .posted-on;
+ } .journal-title {
+   h2 {
+     a {
+      color: $brand_color_green;
+      font-size: 20px;
+      font-family: $font_accent;
+      text-transform: uppercase;
+      margin: 0px;
+     }
+   }
+ }
 
 // adventure section
 
@@ -92,10 +116,15 @@
   text-transform: uppercase;
   display: flex;
   justify-content: center;
+  font-family: $font_accent;
+  font-weight: 300;
+  font-size: 40px;
+  color: #000;
 }
 
 h2.inhabitent-adventures {
   @extend .inhabitent-journal-title;
+  
 }
 
 .journal-title {
@@ -128,8 +157,10 @@ h2.inhabitent-adventures {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 30px;
+  font-size: 40px;
   text-transform: uppercase;
+  font-family: $font_accent;
+  font-weight: 300;
 }
 
 .product-type-blocks {
