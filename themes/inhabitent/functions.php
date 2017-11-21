@@ -35,6 +35,7 @@ function red_starter_setup() {
 		'caption',
 	) );
 
+	
 }
 endif; // red_starter_setup
 add_action( 'after_setup_theme', 'red_starter_setup' );
@@ -106,3 +107,11 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+
+function rc_modify_query_limit_posts( $query ) {
+	if( ! is_admin() && $query->is_main_query() ) {
+			$query->set('posts_per_page', '16');
+	}
+ }
+

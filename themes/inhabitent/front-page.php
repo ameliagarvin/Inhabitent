@@ -106,28 +106,28 @@ get_header(); ?>
     <div class="canoe">
 			<div class="adventure-info">
 					<h3>Getting Back to Nature in a Canoe</h3>
-				  	<a class= "read-more" href ="#">read more</a>
+				  	<a class="read-more" href ="#">read more</a>
 			</div>
 		</div>
 
     <div class="fire">
 		  <div class="adventure-info">
 					<h3>A Night with Friends at the Beach</h3>
-				  	<a class= "read-more" href ="#">read more</a>
+				  	<a class="read-more" href ="#">read more</a>
 			</div>
 		</div>
 
     <div class="mountain">
 		<div class="mountain-info">
 					<h3>Taking in the View at Big Mountain</h3>
-				  	<a class= "read-more" href ="#">read more</a>
+				  	<a class="read-more" href ="#">read more</a>
 			</div>
 		</div>
 
     <div class="bonfire">
 			<div class="bonfire-info">
 					<h3>Star-Gazing at the Night Sky</h3>
-				  	<a class= "read-more" href ="#">read more</a>
+				  	<a class="read-more" href ="#">read more</a>
 		 	</div>
 		</div>
 		 
