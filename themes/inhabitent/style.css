@@ -808,6 +808,10 @@ li.storie-items {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/night-sky.jpg) center no-repeat;
   background-size: cover; }
 
+.more-adventures {
+  background-color: #248A83;
+  padding: 2% 3%; }
+
 .inhabitent-journal-title, h2.inhabitent-adventures {
   text-transform: uppercase;
   display: -webkit-box;
@@ -1285,3 +1289,38 @@ article#post-122 {
 
 h2.entry-title a {
   color: #d99054; }
+
+.error404 p {
+  font-family: "Merriweather", Helvetica, serif;
+  font-size: 16px; }
+
+.error404 .widgettitle {
+  font-family: "Montserrat", Arial, sans-serif;
+  text-transform: uppercase; }
+
+.error404 .page-title {
+  font-family: "Montserrat", Arial, sans-serif;
+  text-transform: uppercase; }
+
+.error404 fieldset {
+  border: none; }
+
+.error404 .search-field {
+  color: #666;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  border-radius: 0; }
+
+.error404 button {
+  display: none; }
+
+.error404 .widget.widget_recent_entries ul, .error404 .widget.widget_categories ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0; }
+
+.error404 .widget.widget_recent_entries a, .error404 .widget.widget_categories a {
+  color: #248A83;
+  font-size: 16px;
+  line-height: 2.25em;
+  font-weight: 100; }

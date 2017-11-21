@@ -125,6 +125,10 @@ ul.stories {
   background-size: cover; 
 }
 
+.more-adventures {
+  background-color: $brand_color_green;
+  padding: 2% 3%;
+}
 
 .inhabitent-journal-title {
   text-transform: uppercase;
@@ -580,3 +584,44 @@ article#post-122 {
     } 
 }
 
+// error page styles
+
+.error404 { 
+  p {
+    font-family: $font_main;
+    font-size: 16px;
+  } .widgettitle {
+    font-family: $font_accent;
+    text-transform: uppercase;
+  }
+  .page-title {
+    font-family: $font_accent;
+    text-transform: uppercase;
+  } fieldset {
+    border: none;
+  } .search-field {
+    color: #666;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+  } button {
+    display: none;
+  }
+}
+
+.error404 {
+  .widget.widget_recent_entries {
+    ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+    } a {
+      color: $brand_color_green;
+      font-size: 16px;
+      line-height: 2.25em;
+      font-weight: 100;
+    }
+   }  .widget.widget_categories {
+    @extend .widget.widget_recent_entries;
+  }
+}
