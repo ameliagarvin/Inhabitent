@@ -14,11 +14,16 @@
   
 ul.stories {
   display: flex;
-  justify-content: space-between;
   list-style: none;
  } li.storie-items {
    border: $solid_border;
-   margin-bottom: 20px;
+   padding-bottom: 20px;
+   margin: 0 1em;
+   .journal-post {
+     img {
+       height: 15em;
+     }
+   }
  } .posted-on {
    color: black;
    font-family: $font_main;
@@ -58,6 +63,7 @@ ul.stories {
 .adventure-section {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 10px;
   width: 1120px;
   height: 500px;
   margin: 0px auto;
@@ -159,12 +165,23 @@ h2.inhabitent-adventures {
   }
 }
 
+// TODO load inhabitent logo
+
+.hero {
+  display: flex;
+  height: 100vh;
+  padding-top: 0;
+  background:
+  linear-gradient(
+    rgba(0,0,0, 0.3),
+    rgba(0,0,0,0.3)), url(../../images/home-hero.jpg) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
 .home {
   .site-header {
-    min-height: 100vh;
-    background-image: url(../../images/inhabitent-logo-full.svg), url(../../images/home-hero.jpg);
-    background-size: cover;
-    z-index: 2;
   } #content {
     width: 1024px;
   } .container {
@@ -281,8 +298,7 @@ h2.inhabitent-adventures {
       position: relative;
       img {
         width: 100%;
-      }
-      .entry-title {
+      } .entry-title {
         background-color: $brand_color_green;
         font-family: $font_accent;
         text-transform: uppercase;
@@ -291,10 +307,9 @@ h2.inhabitent-adventures {
         left: 0;
         a {
           color: $color__background-screen;
+          font-family: $font_accent;
         }
-      }
-
-     .entry-meta {
+      } .entry-meta {
         background-color: $brand_color_green;
         font-family: $font_accent;
         color: $color__background-screen;
@@ -308,12 +323,9 @@ h2.inhabitent-adventures {
 }
 
 // individual journal page
-
-.postid-47, 
-.postid-45,
 .postid-42,
-.postid-49,
-.postid-51 {
+.post-45,
+.post {
   .site-content {
     width: 1120px;
     .entry-header {
@@ -326,8 +338,8 @@ h2.inhabitent-adventures {
         font-family: $font_accent;
         text-transform: uppercase;
         position: absolute;
-        left: 473px;
-        bottom: 13px;
+        left: 37.4%;
+        bottom: -54%;
         padding: 5px 10px;
       } a {
         color: white;
@@ -338,7 +350,7 @@ h2.inhabitent-adventures {
         text-transform: uppercase;
         position: absolute;
         top: 100px;
-        left: 143px;
+        left: 9.7%;
         width: 50%;
         background-color: $brand_color_green;
         color: white;
@@ -347,22 +359,49 @@ h2.inhabitent-adventures {
   }
 }
 
-.postid-47, 
-.postid-45,
-.postid-42,
-.postid-49,
-.postid-51 {
-  .site-content {
-   .entry-footer {
-     text-transform: uppercase;
-     .tag-links {
-       a {
-         color: $brand_color_green;
-       }
-     }
-   }
-  }
+.post-45 {
+  .entry-meta {
+    background-color: $brand_color_green;
+    color: white;
+    font-family: $font_accent;
+    text-transform: uppercase;
+    position: absolute;
+    left: 37.4%;
+    bottom: -54%;
+    padding: 5px 10px;
+  } 
+
 }
+// .postid-45 {
+//   .site-content {
+//     .entry-meta {
+//       background-color: $brand_color_green;
+//       color: white;
+//       font-family: $font_accent;
+//       text-transform: uppercase;
+//       position: absolute;
+//       left: 38.5%;
+//       bottom: -50.6%;
+//       padding: 5px 10px;
+//     }
+//   }
+// }
+// .postid-47, 
+// .postid-45,
+// .postid-42,
+// .postid-49,
+// .postid-51 {
+//   .site-content {
+//    .entry-footer {
+//      text-transform: uppercase;
+//      .tag-links {
+//        a {
+//          color: $brand_color_green;
+//        }
+//      }
+//    }
+//   }
+// }
 /* header */
 .search-icon {
   display: flex;
@@ -527,10 +566,13 @@ p.p1 {
     .product-type-blocks {
       display: flex;
       justify-content: center;
-      border-bottom: 1px dashed #c8c8c8;;
+      border-bottom: 1px dashed #c8c8c8;
+      width: 100%;
     } .product-type-block-wrapper{
       border: none;
     } a.btn {
+      font-family: $font_accent;
+      font-size: 20px;
       background-color: #FFF; 
       color: $color__text-screen;
     }
@@ -550,7 +592,13 @@ p.p1 {
 
 .product-name {
   display: flex;
-}
+    h2.entry-title {
+      justify-content: center;
+      font-family: $font_main;
+      font-size: 1em;
+      font-weight: 100;
+    }
+} 
 
 .product-container {
   display: flex;
@@ -566,6 +614,8 @@ p.p1 {
     margin: 10px;
   } img {
     border-bottom: 4px solid #e1e1e1;
+    height: 50%;
+    max-height: 200px;
   } 
 } 
 // individual product posts

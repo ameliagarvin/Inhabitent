@@ -6,10 +6,17 @@
  */
 
 get_header(); ?>
-
+    
 	<div id="primary" class="content-area">
+
+	<section class="hero">	
+  <img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-full.svg'; ?>" alt="inhabitent-logo"/>
+ </section>
+ 
 		<main id="main" class="site-main" role="main">
-		
+
+      
+
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -71,7 +78,7 @@ get_header(); ?>
  
    <h2 class="inhabitent-journal-title">inhabitent journal</h2>
  
-	 
+	<div class="stories-container"> 
  <ul class="stories"> 
 <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
   <li class="storie-items">
@@ -88,14 +95,14 @@ get_header(); ?>
 	<div class="journal-title"><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2></div>
   <div class ="read"><a href="<?php the_permalink(); ?>">Read entry</a></div>
 	
-</div>
+
 
 
 </li>
 
 <?php endforeach; wp_reset_postdata(); ?>
 </ul>
-							 
+							 </div>							 
  
 <!-- Adventures section -->
 	<h2 class="inhabitent-adventures">latest adventures</h2>

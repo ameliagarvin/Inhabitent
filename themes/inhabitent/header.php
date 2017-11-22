@@ -42,9 +42,10 @@
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 				<div class="search-icon">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<i class="fa fa-search" aria-hidden="true"></i>
+					<?php get_search_form(); ?>
 				</div>	
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
+			
 			<div id="content" class="site-content">

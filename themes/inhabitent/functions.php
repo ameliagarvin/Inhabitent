@@ -88,8 +88,11 @@ function red_starter_scripts() {
 	
 	wp_enqueue_script('jquery');
 
-	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
+	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	
+	wp_enqueue_script('scripts.js', get_template_directory_uri() . '/build/js/scripts.min.js', array('jquery'), null, true );
+	// // linking scripts js
 	wp_enqueue_script('font-awesome-cdn','https://use.fontawesome.com/2ed2c07287.js',array(), '4.7',true); //font-awesome
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -103,15 +106,17 @@ add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
  */
 require get_template_directory() . '/inc/template-tags.php';
 
+function rc_modify_query_limit_posts( $query ) {
+	if( ! is_admin() && $query->is_main_query() ) {
+			$query->set('posts_per_page', '16');
+	}
+ }
+ 
 /**
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
 
 
-function rc_modify_query_limit_posts( $query ) {
-	if( ! is_admin() && $query->is_main_query() ) {
-			$query->set('posts_per_page', '16');
-	}
- }
+
 

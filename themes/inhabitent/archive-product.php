@@ -20,6 +20,7 @@ get_header(); ?>
                $terms = get_terms( array(
                    'taxonomy' => 'product-type',
                    'hide_empty' => 0,
+                   'posts_per_page' => 16,
 							 ) );
 							 
                if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
@@ -31,7 +32,9 @@ get_header(); ?>
                      <div class="product-type-block-wrapper">
                        
                         
-                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> </a></p>
+                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn">
+                        <?php echo $term->name; ?> 
+                      </a></p>
                      </div>
 
                   <?php endforeach; ?>
