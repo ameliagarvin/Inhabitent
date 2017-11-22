@@ -4,9 +4,8 @@
 
   $( "#search-submit" ).click(function(event) {
     event.preventDefault();
-    $( "#search-field" ).focus();
-    $( "#search-field" ).show( 2000 );
-    $( "#target" ).blur();
+    $( "#search-field" ).focus($( "#search-field" ).show( 2000 ));
+    $( "#search-field" ).blur();
 });
 
 

@@ -140,8 +140,9 @@ get_header(); ?>
 		 
 </div>
 	
-
-<p class="more-adventures">more adventures</p>
+<div class="more-adventures">
+<a href="#">more adventures</a>
+</div>
 		
        
 		</main><!-- #main -->

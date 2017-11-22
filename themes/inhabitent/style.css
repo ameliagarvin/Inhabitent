@@ -971,8 +971,14 @@ li.storie-items {
   margin-top: 8%; }
 
 .more-adventures {
-  background-color: #248A83;
-  padding: 2% 3%; }
+  width: 100%;
+  margin: 4% 0; }
+  .more-adventures a {
+    background-color: #248A83;
+    padding: 1% 2%;
+    font-family: "nov", Arial, sans-serif;
+    color: white;
+    font-size: 20px; }
 
 .inhabitent-journal-title, h2.inhabitent-adventures {
   text-transform: uppercase;

@@ -157,8 +157,15 @@ ul.stories {
   margin-top: 8%;
 }
 .more-adventures {
-  background-color: $brand_color_green;
-  padding: 2% 3%;
+  width: 100%;
+  margin: 4% 0;
+  a {
+    background-color: $brand_color_green;
+    padding: 1% 2%;
+    font-family: $font_accent;
+    color: white;
+    font-size: 20px;
+  }
 }
 
 .inhabitent-journal-title {
