@@ -3,7 +3,15 @@
 --------------------------------------------------------------*/
 
 /* Front page*/
+// search styles
 
+fieldset {
+  border: none;
+  #search-submit {
+    border: none;
+    background-color: transparent;
+  }
+}
 
 #main {
   display: flex;
@@ -344,6 +352,7 @@ h2.inhabitent-adventures {
 /* header */
 .search-icon {
   display: flex;
+  align-items: center;
 }
 
 /* footer */

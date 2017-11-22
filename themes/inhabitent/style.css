@@ -516,7 +516,8 @@ a {
     text-decoration: none;
     color: #21759b;
     font-family: "nov", Arial, sans-serif;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 16px; }
 
 /* Small menu. */
 .menu-toggle,
@@ -836,13 +837,19 @@ object {
   display: block; }
 
 .tent {
-  width: 40px;
+  width: 50px;
   margin-left: 70px; }
 
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page*/
+fieldset {
+  border: none; }
+  fieldset #search-submit {
+    border: none;
+    background-color: transparent; }
+
 #main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1151,7 +1158,10 @@ li.storie-items {
 .search-icon {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 /* footer */
 .inhabitent-footer {

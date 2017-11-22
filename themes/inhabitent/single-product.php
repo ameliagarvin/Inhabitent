@@ -23,29 +23,27 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
+        
 				<?php
 					get_template_part( 'template-parts/content' );
+					
 				?> 
- 	    
-			
-			<p><?php echo CFS()->get('price'); ?></p>
+ 	    <p><?php echo CFS()->get('price'); ?></p>
+			  
 		
 
-			
-			<?php endwhile; ?>
-
+		<?php endwhile; ?>
 
 		<?php else : ?>
-
 		
-
 		<?php endif; ?>
+
     <div class="social-media">
 		<button class="social-media-button"><i class="fa fa-facebook" aria-hidden="true"></i>like</button>
 		<button class="social-media-button"><i class="fa fa-twitter" aria-hidden="true">tweet</i></button>
 		<button class="social-media-button"><i class="fa fa-pinterest" aria-hidden="true">pin</i></button>
 		</div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
