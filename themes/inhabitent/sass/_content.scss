@@ -129,3 +129,27 @@
     } 
   }
 }
+// styling comment section in individual journal posts
+
+.social-media-journal {
+		display: flex;
+		width: 100%;
+		a {
+			border: 1px solid black;
+			padding: 10px 30px;
+			color: black;
+			font-family: $font_accent;
+			text-transform: uppercase;
+			margin-left: 10px;
+		} i {
+			color: black;
+			margin-right: 10px;
+		} 
+	}
+.nav-previous {
+	display: none;
+}
+
+#comments {
+	width: 100%;
+}

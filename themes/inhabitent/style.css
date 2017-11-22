@@ -753,6 +753,28 @@ a {
       right: 0;
       bottom: 7px; }
 
+.social-media-journal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  .social-media-journal a {
+    border: 1px solid black;
+    padding: 10px 30px;
+    color: black;
+    font-family: "nov", Arial, sans-serif;
+    text-transform: uppercase;
+    margin-left: 10px; }
+  .social-media-journal i {
+    color: black;
+    margin-right: 10px; }
+
+.nav-previous {
+  display: none; }
+
+#comments {
+  width: 100%; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -878,7 +900,7 @@ li.storie-items {
   .adventure-section .adventure-info {
     color: white;
     font-family: "merriweather", Helvetica, serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 100;
     margin: 2%; }
   .adventure-section a.read-more {
@@ -909,6 +931,14 @@ li.storie-items {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/beach-bonfire.jpg) center no-repeat;
   background-size: cover; }
 
+.fire-info {
+  color: white;
+  font-family: "merriweather", Helvetica, serif;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 2%;
+  margin-top: 8%; }
+
 .mountain {
   grid-column: 3/4;
   grid-row: 3/4;
@@ -917,12 +947,28 @@ li.storie-items {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/mountain-hikers.jpg) center no-repeat;
   background-size: cover; }
 
+.mountain-info {
+  color: white;
+  font-family: "merriweather", Helvetica, serif;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 2%;
+  margin-top: 8%; }
+
 .bonfire {
   grid-column: 4/4;
   grid-row: 3/4;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/night-sky.jpg) center no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/night-sky.jpg) center no-repeat;
   background-size: cover; }
+
+.bonfire-info {
+  color: white;
+  font-family: "merriweather", Helvetica, serif;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 2%;
+  margin-top: 8%; }
 
 .more-adventures {
   background-color: #248A83;
@@ -1026,18 +1072,6 @@ li.storie-items {
       padding: .75rem 1.5rem;
       text-decoration: none;
       text-transform: uppercase; }
-
-.social-media-journal a {
-  border: 1px solid black;
-  padding: 10px 30px;
-  color: black;
-  font-family: "nov", Arial, sans-serif;
-  text-transform: uppercase;
-  margin-left: 10px; }
-
-.social-media-journal i {
-  color: black;
-  margin-right: 10px; }
 
 #primary {
   padding-right: 5%;

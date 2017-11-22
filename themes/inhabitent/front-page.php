@@ -118,7 +118,7 @@ get_header(); ?>
 		</div>
 
     <div class="fire">
-		  <div class="adventure-info">
+		  <div class="fire-info">
 					<h3>A Night with Friends at the Beach</h3>
 				  	<a class="read-more" href ="#">read more</a>
 			</div>
