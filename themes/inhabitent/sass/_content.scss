@@ -56,3 +56,76 @@
 
 // archive posts
 
+.archive {
+	div#content {
+		display: flex;
+    flex-direction: row;
+		width: 100%;
+		padding-top: 4%;
+	 } .page-title h1 {
+		 display: flex;
+		 justify-content: flex-end;
+	 }
+	  .entry-header {
+		position: relative;
+		img {
+			width: 100%;
+		} .entry-title {
+			background-color: $brand_color_green;
+			font-family: $font_accent;
+			text-transform: uppercase;
+			position: absolute;
+			top: 20px;
+			left: 0;
+			color: $color__background-screen;
+			a {
+				color: $color__background-screen;
+				font-family: $font_accent;
+				}
+		} .entry-meta {
+			background-color: $brand_color_green;
+			font-family: $font_accent;
+			color: $color__background-screen;
+			text-align: center;
+			position: absolute;
+			right: 0;
+			bottom: 7px;
+		}
+  	} 
+	}
+
+// single journal posts using single-post class rather than targeting individual page id's
+
+.single-post {
+	.site-content {
+    margin: auto;
+    padding-top: 28px;
+    display: flex;
+    .entry-header {
+      position: relative;
+      img {
+        width: 100%;
+      } .entry-title {
+        background-color: $brand_color_green;
+        font-family: $font_accent;
+        text-transform: uppercase;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        color: $color__background-screen;
+        a {
+          color: $color__background-screen;
+          font-family: $font_accent;
+          }
+      } .entry-meta {
+        background-color: $brand_color_green;
+        font-family: $font_accent;
+        color: $color__background-screen;
+        text-align: center;
+        position: absolute;
+        right: 0;
+        bottom: 7px;
+      }
+    } 
+  }
+}

@@ -305,10 +305,11 @@ h2.inhabitent-adventures {
         position: absolute;
         top: 20px;
         left: 0;
+        color: $color__background-screen;
         a {
           color: $color__background-screen;
           font-family: $font_accent;
-        }
+          }
       } .entry-meta {
         background-color: $brand_color_green;
         font-family: $font_accent;
@@ -322,86 +323,6 @@ h2.inhabitent-adventures {
   }
 }
 
-// individual journal page
-.postid-42,
-.post-45,
-.post {
-  .site-content {
-    width: 1120px;
-    .entry-header {
-      img {
-        width: 100%;
-      }
-      .entry-meta {
-        background-color: $brand_color_green;
-        color: white;
-        font-family: $font_accent;
-        text-transform: uppercase;
-        position: absolute;
-        left: 37.4%;
-        bottom: -54%;
-        padding: 5px 10px;
-      } a {
-        color: white;
-      }
-      .entry-title {
-        font-family: $font_accent;
-        font-size: 2.1em;
-        text-transform: uppercase;
-        position: absolute;
-        top: 100px;
-        left: 9.7%;
-        width: 50%;
-        background-color: $brand_color_green;
-        color: white;
-      } 
-    }
-  }
-}
-
-.post-45 {
-  .entry-meta {
-    background-color: $brand_color_green;
-    color: white;
-    font-family: $font_accent;
-    text-transform: uppercase;
-    position: absolute;
-    left: 37.4%;
-    bottom: -54%;
-    padding: 5px 10px;
-  } 
-
-}
-// .postid-45 {
-//   .site-content {
-//     .entry-meta {
-//       background-color: $brand_color_green;
-//       color: white;
-//       font-family: $font_accent;
-//       text-transform: uppercase;
-//       position: absolute;
-//       left: 38.5%;
-//       bottom: -50.6%;
-//       padding: 5px 10px;
-//     }
-//   }
-// }
-// .postid-47, 
-// .postid-45,
-// .postid-42,
-// .postid-49,
-// .postid-51 {
-//   .site-content {
-//    .entry-footer {
-//      text-transform: uppercase;
-//      .tag-links {
-//        a {
-//          color: $brand_color_green;
-//        }
-//      }
-//    }
-//   }
-// }
 /* header */
 .search-icon {
   display: flex;
