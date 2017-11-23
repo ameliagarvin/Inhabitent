@@ -260,6 +260,8 @@ h2.inhabitent-adventures {
       padding: .75rem 1.5rem;
       text-decoration: none;
       text-transform: uppercase;
+      font-family: $font_accent;
+      font-size: .9rem;
     }
    }
 }
@@ -366,7 +368,7 @@ h2.inhabitent-adventures {
   flex-direction: row;
   padding: 2%;
   justify-content: space-around;
-	color: $color__background-body;
+	color: #FFF;
 }
 
 .wood {
@@ -385,7 +387,7 @@ h2.inhabitent-adventures {
     color: $brand_color_orange;
 	}
 	a {
-    color: $color__background-body;
+    color: #FFF;
     padding-left: 10px;
   }
   i {
@@ -437,7 +439,7 @@ h2.inhabitent-adventures {
 .copyright {
   display: flex;
   justify-content: center;
-  color: $color__background-body;
+  color: #FFF;
 }
 
 // about page TODO adjust hero image size

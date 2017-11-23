@@ -5,9 +5,28 @@
  * @package RED_Starter_Theme
  */
 
+
+ 
 get_header(); ?>
  
-
+ <header class="page-header">
+            
+            <?php
+$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); ?>
+<h1 class="tax-custom-heading">
+<?php echo $term->name;
+               $terms = get_terms( array(
+                   'taxonomy' => 'product-type',
+                   'hide_empty' => 0,
+               ) );
+               if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
+            ?>
+               <div class="product-type-description">
+                             <?php echo category_description(); ?>
+               </div>
+               
+            <?php endif; ?>
+            </header>
  
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -26,7 +45,7 @@ get_header(); ?>
 
 		
 
-<li class="page-header">
+<li class="poduct-items">
       
 <?php
    $args = array();
