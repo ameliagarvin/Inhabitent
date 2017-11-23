@@ -20,9 +20,11 @@ $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' 
                    'hide_empty' => 0,
                ) );
                if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
+                
             ?>
+            
                <div class="product-type-description">
-                             <?php echo category_description(); ?>
+              <?php echo category_description(); ?>
                </div>
                
             <?php endif; ?>
@@ -42,7 +44,7 @@ $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' 
       <ul>
       
       <?php while ( have_posts() ) : the_post(); ?>
-
+       
 		
 
 <li class="poduct-items">
@@ -62,11 +64,11 @@ $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' 
         
         <?php
          
-          
+         
 
            if ( has_post_thumbnail() ) : ?>
 
-<a href="#" rel="bookmark"><?php  the_post_thumbnail( 'large', esc_url( get_permalink() ) ); ?></a>
+           <a href="<?php the_permalink(); ?>"><?php  the_post_thumbnail( 'large'); ?></a>
         <?php endif; ?>
      
         <div class="product-name">

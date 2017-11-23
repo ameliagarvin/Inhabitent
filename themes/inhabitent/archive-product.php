@@ -57,8 +57,11 @@ get_header(); ?>
           
 
            if ( has_post_thumbnail() ) : ?>
+           
 
-<a href="#" rel="bookmark"><?php  the_post_thumbnail( 'large', esc_url( get_permalink() ) ); ?></a>
+           <a href="<?php the_permalink(); ?>"><?php  the_post_thumbnail( 'large'); ?></a>
+
+
         <?php endif; ?>
      
         <div class="product-name">
