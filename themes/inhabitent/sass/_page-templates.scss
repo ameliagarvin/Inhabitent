@@ -296,6 +296,7 @@ h2.inhabitent-adventures {
     padding: 0;
   } a {
     color: $brand_color_green; 
+    font-size: 16px;
   }
 }
 
@@ -304,6 +305,7 @@ h2.inhabitent-adventures {
     padding-right: 15px;
   } a {
     color: $brand_color_green;
+    font-size: 16px;
   } 
 }
 
@@ -337,6 +339,8 @@ h2.inhabitent-adventures {
         a {
           color: $color__background-screen;
           font-family: $font_accent;
+          font-size: 20px;
+          padding: 2% 1%;
           }
       } .entry-meta {
         background-color: $brand_color_green;
@@ -440,6 +444,15 @@ h2.inhabitent-adventures {
   display: flex;
   justify-content: center;
   color: #FFF;
+}
+.widget.tent-biz-hours-class {
+   p {
+     font-family: $font_main;
+   }
+  .day-of-week {
+    font-family: $font_main;
+    font-weight: bold;
+  }
 }
 
 // about page TODO adjust hero image size

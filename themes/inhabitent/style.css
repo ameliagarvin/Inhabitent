@@ -808,6 +808,17 @@ a {
     font-size: 30px;
     text-transform: uppercase; }
 
+.read-more-button {
+  width: 100%;
+  margin-bottom: 2%; }
+  .read-more-button a {
+    border: 1px solid #000;
+    color: #000;
+    padding: 1% 2%;
+    text-transform: uppercase;
+    font-family: "nov", Arial, sans-serif;
+    font-size: 16px; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -1143,13 +1154,15 @@ li.storie-items {
   padding: 0; }
 
 .widget.widget_archive a {
-  color: #248A83; }
+  color: #248A83;
+  font-size: 16px; }
 
 .contact-meta i {
   padding-right: 15px; }
 
 .contact-meta a {
-  color: #248A83; }
+  color: #248A83;
+  font-size: 16px; }
 
 .blog .site-content,
 .error404 .site-content,
@@ -1178,7 +1191,9 @@ li.storie-items {
       color: #f1f1f1; }
       .blog .site-content .entry-header .entry-title a {
         color: #f1f1f1;
-        font-family: "nov", Arial, sans-serif; }
+        font-family: "nov", Arial, sans-serif;
+        font-size: 20px;
+        padding: 2% 1%; }
     .blog .site-content .entry-header .entry-meta {
       background-color: #248A83;
       font-family: "nov", Arial, sans-serif;
@@ -1302,6 +1317,13 @@ li.storie-items {
       -ms-flex-pack: center;
           justify-content: center;
   color: #FFF; }
+
+.widget.tent-biz-hours-class p {
+  font-family: "merriweather", Helvetica, serif; }
+
+.widget.tent-biz-hours-class .day-of-week {
+  font-family: "merriweather", Helvetica, serif;
+  font-weight: bold; }
 
 .page-id-66 .site-content .entry-header #secondary {
   display: none; }

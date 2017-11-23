@@ -30,7 +30,7 @@ get_header(); ?>
 				<?php
 					get_template_part( 'template-parts/content' );
 				?>
-
+        <div class ="read-more-button"><a href="<?php the_permalink(); ?>">read more</a></div>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
