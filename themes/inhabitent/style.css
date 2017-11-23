@@ -789,6 +789,25 @@ a {
   text-transform: none;
   font-size: 16px; }
 
+.search-results .entry-summary p {
+  font-weight: 100;
+  line-height: 1.75em;
+  font-family: "merriweather", Helvetica, serif; }
+
+.search-results .page-header {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 2%;
+  padding-bottom: 2%;
+  width: 100%; }
+
+.search-results h2.entry-title {
+  font-family: "nov", Arial, sans-serif; }
+  .search-results h2.entry-title a {
+    color: #248A83;
+    font-family: "nov", Arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/

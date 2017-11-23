@@ -22,7 +22,7 @@ get_header(); ?>
 		</div>
 
 			<?php the_post_navigation(); ?>
-
+      
 	
 
 			<?php

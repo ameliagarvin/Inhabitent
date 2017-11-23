@@ -20,7 +20,7 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
+         
 
 		
 			
