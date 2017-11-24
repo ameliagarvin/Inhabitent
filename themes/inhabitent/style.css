@@ -896,7 +896,12 @@ fieldset {
   border: none; }
   fieldset #search-submit {
     border: none;
-    background-color: transparent; }
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    fieldset #search-submit .fa.fa-search {
+      color: white;
+      text-shadow: 1px 1px 2px #000; }
 
 #main {
   display: -webkit-box;
@@ -1036,7 +1041,8 @@ li.storie-items {
     padding: 1% 2%;
     font-family: "nov", Arial, sans-serif;
     color: white;
-    font-size: 20px; }
+    font-size: 20px;
+    margin-left: 10%; }
 
 .inhabitent-journal-title, h2.inhabitent-adventures {
   text-transform: uppercase;
@@ -1081,6 +1087,28 @@ li.storie-items {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.home .site-header .tent {
+  display: none; }
+
+.home .site-header .main-navigation {
+  border: none;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-image: url(../../images/inhabitent-logo-tent-white.svg);
+  background-size: 50px 33px;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  background-position-x: 2%; }
+  .home .site-header .main-navigation a {
+    color: white;
+    text-shadow: 1px 1px 2px #323232; }
 
 .home #content {
   width: initial;
@@ -1336,6 +1364,25 @@ li.storie-items {
 
 .page-id-66 .site-content .entry-header #secondary {
   display: none; }
+
+.page-id-5 .site-header .main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-image: url(../../images/inhabitent-logo-tent-white.svg);
+  background-size: 50px 33px;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  background-position-x: 2%; }
+  .page-id-5 .site-header .main-navigation a {
+    color: white;
+    text-shadow: 1px 1px 2px #323232; }
+  .page-id-5 .site-header .main-navigation .tent {
+    display: none; }
 
 .page-id-5 #content {
   width: initial; }
