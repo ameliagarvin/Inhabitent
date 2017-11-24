@@ -9,7 +9,7 @@
   
 			</div><!-- #content -->
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
+			<footer id="colophon" class="site-footer">
 			<div class="wood" style="background-image: url('<?php echo get_stylesheet_directory_uri();?>/images/dark-wood.png')">
 	 <div class="site-info">
 	 <div class= "contact-info">

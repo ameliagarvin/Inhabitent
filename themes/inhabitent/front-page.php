@@ -9,11 +9,11 @@ get_header(); ?>
     
 	<div id="primary" class="content-area">
 
-	<section class="hero">	
+	<div class="hero">	
   <img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-full.svg'; ?>" alt="inhabitent-logo"/>
- </section>
+ </div>
  
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main">
 
       
 

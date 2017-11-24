@@ -53,6 +53,9 @@ ul.stories {
 
  .home {
    .site-content {
+     #primary {
+      padding: 0;
+     }
     .posted-on {
       .read {
         a {
@@ -223,7 +226,8 @@ h2.inhabitent-adventures {
 .home {
   .site-header {
   } #content {
-    width: 1024px;
+    width: initial;
+    margin-top: -1.5em;
   } .container {
     width: 1024px;
   }
@@ -457,6 +461,7 @@ h2.inhabitent-adventures {
 
 // about page TODO adjust hero image size
 
+
 .page-id-66 {
   .site-content {
     .entry-header {
@@ -467,10 +472,20 @@ h2.inhabitent-adventures {
   }
 }
 
+.page-id-5 {
+  #content {
+    width: initial;
+  } #primary {
+    padding: 0;
+    margin-top: -1.5em;
+  }
+}
 .entry-header h1 {
  display: flex;
  justify-content: center;
- color: $color__text-main;
+ color: white;
+ text-transform: uppercase;
+ font-size: 40px;
 }
 
 .custom-hero {
@@ -511,11 +526,8 @@ p.p1 {
   line-height: $font__line-height-body;
   font-size: $font_size;
 }
-// .page-id-5 {
-//    #primary {
-//       display: none;
-//     }
-// }
+
+
 
 
 // archive page
