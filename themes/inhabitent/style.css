@@ -769,7 +769,7 @@ a {
 #comments {
   width: 100%; }
 
-.product-template-default #content {
+.single-product #content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
