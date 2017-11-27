@@ -92,6 +92,14 @@
   	} 
 	}
 
+	.date {
+		div#content {
+			flex-direction: row;
+			margin: 0 auto;
+			width: 1120px;
+		}
+	}
+
 // single journal posts using single-post class rather than targeting individual page id's
 
 .single-post {
@@ -153,9 +161,9 @@
 }
 
 // TODO single product page using single-product
-.single-product {
- 	#content {
-	 display: flex;
+.product-template-default.single.single-product.postid-120.logged-in.admin-bar.customize-support {
+	body {
+		display: flex;
 	}
 }
 
@@ -204,6 +212,10 @@
     margin-bottom: 2%;
 		padding-bottom: 2%;
 		width: 100%;
+		h1.page-title {
+			text-transform: uppercase;
+		}
+
 	} h2.entry-title {
 		font-family: $font_accent;
 		a {

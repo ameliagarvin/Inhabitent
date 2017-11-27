@@ -717,6 +717,14 @@ a {
     right: 0;
     bottom: 7px; }
 
+.date div#content {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  width: 1120px; }
+
 .single-post .site-content {
   margin: auto;
   padding-top: 28px;
@@ -769,7 +777,7 @@ a {
 #comments {
   width: 100%; }
 
-.single-product #content {
+.product-template-default.single.single-product.postid-120.logged-in.admin-bar.customize-support body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -804,6 +812,8 @@ a {
   margin-bottom: 2%;
   padding-bottom: 2%;
   width: 100%; }
+  .search-results .page-header h1.page-title {
+    text-transform: uppercase; }
 
 .search-results h2.entry-title {
   font-family: "nov", Arial, sans-serif; }

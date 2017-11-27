@@ -11,7 +11,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 
 	<div class="hero">	
-  <img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-full.svg'; ?>" alt="inhabitent-logo"/>
+  	<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-full.svg'; ?>" alt="inhabitent-logo"/>
  </div>
  
 		<main id="main" class="site-main">

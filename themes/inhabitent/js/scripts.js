@@ -21,14 +21,7 @@ $( "#search-field" ).on('blur', function(){
   $( "#search-field" ).toggle();
 });
 
-// add toggle function
+
 })(jQuery);
 
-// $( "#search-field" ).show( 2000 )
-  // $( "#search-field" ).hide();
-
-//   $( "#search-submit" ).click(function(event) {
-//     event.preventDefault();
-//     $( "#search-field" ).focus();
-//     $( "#search-field" ).blur();
-// });
+// maybe remove the button
