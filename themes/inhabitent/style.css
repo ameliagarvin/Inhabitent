@@ -681,6 +681,9 @@ a {
   display: -ms-flexbox;
   display: flex; }
 
+.comment-author-avatar img {
+  border-radius: 50%; }
+
 .archive div#content {
   width: 100%;
   padding-top: 4%; }
@@ -1621,17 +1624,63 @@ p.p1 {
     height: 50%;
     max-height: 200px; }
 
-article#post-122 {
+article#post-96,
+#post-122,
+#post-120,
+#post-118,
+#post-116,
+#post-114,
+#post-112,
+#post-110,
+#post-108,
+#post-106,
+#post-102,
+#post-104,
+#post-100,
+#post-98,
+#post-94,
+#post-92 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  article#post-122 .entry-content {
-    margin-left: 10%; }
-  article#post-122 p {
+  article#post-96 .entry-content,
+  #post-122 .entry-content,
+  #post-120 .entry-content,
+  #post-118 .entry-content,
+  #post-116 .entry-content,
+  #post-114 .entry-content,
+  #post-112 .entry-content,
+  #post-110 .entry-content,
+  #post-108 .entry-content,
+  #post-106 .entry-content,
+  #post-102 .entry-content,
+  #post-104 .entry-content,
+  #post-100 .entry-content,
+  #post-98 .entry-content,
+  #post-94 .entry-content,
+  #post-92 .entry-content {
+    margin-left: 10%;
+    width: 50%; }
+  article#post-96 p,
+  #post-122 p,
+  #post-120 p,
+  #post-118 p,
+  #post-116 p,
+  #post-114 p,
+  #post-112 p,
+  #post-110 p,
+  #post-108 p,
+  #post-106 p,
+  #post-102 p,
+  #post-104 p,
+  #post-100 p,
+  #post-98 p,
+  #post-94 p,
+  #post-92 p {
     font-family: "merriweather", Helvetica, serif;
     font-weight: 100; }
 
-h2.entry-title a {
+h1.entry-title {
   color: #d99054; }
 
 .error404 p {

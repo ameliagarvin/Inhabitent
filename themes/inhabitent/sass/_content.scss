@@ -54,6 +54,11 @@
 	display: flex;
 }
 
+.comment-author-avatar {
+	img {
+		border-radius: 50%;
+	}
+}
 // archive posts
 
 .archive {

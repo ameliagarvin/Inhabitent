@@ -658,21 +658,37 @@ p.p1 {
     max-height: 200px;
   } 
 } 
-// individual product posts
+// individual product pages
 
-article#post-122 {
+article#post-96,
+#post-122,
+#post-120,
+#post-118,
+#post-116,
+#post-114,
+#post-112,
+#post-110,
+#post-108,
+#post-106,
+#post-102,
+#post-104,
+#post-100,
+#post-98,
+#post-94,
+#post-92,
+
+ {
   display: flex;
  .entry-content {
    margin-left: 10%;
+   width: 50%;
  } p {
    font-family: $font_main;
    font-weight: 100;
  }
-} h2.entry-title {
-    a {
-      color: $brand_color_orange;
-    } 
-}
+} h1.entry-title {
+    color: $brand_color_orange;
+  }
 
 // error page styles
 
