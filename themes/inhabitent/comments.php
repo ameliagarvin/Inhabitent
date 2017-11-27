@@ -17,7 +17,7 @@ if ( post_password_required() ) {
 
 <div id="comments" class="comments-area">
 
-	<?php // You can start editing here -- including this comment! ?>
+<!-- TODO add email form and name -->
 
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
@@ -70,6 +70,26 @@ if ( post_password_required() ) {
 		'comment_notes_before' => wp_kses( '<p class="comment-notes">Want to join the discussion? Feel free to contribute!</p>', array( 'p' => array( 'class' => '' ) ) ),
 		'label_submit'         => esc_html( 'Submit' ),
 		'cancel_reply_link'    => esc_html( '[Cancel reply]' )
+
 	) ); ?>
+
+<?php
+
+    ?>
+    <form  action="" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="action" value="submit">
+    Your name:<br>
+    <input name="name" type="text" value="" size="30"/><br>
+    Your email:<br>
+    <input name="email" type="text" value="" size="30"/><br>
+    Your message:<br>
+    <textarea name="message" rows="7" cols="30"></textarea><br>
+    <input type="submit" value="Send email"/>
+    </form>
+    <?php
+
+?>
+
+<?php echo do_shortcode( '[contact-form-7 id="1234" title="Contact form 1"]' ); ?>
 
 </div><!-- #comments -->
