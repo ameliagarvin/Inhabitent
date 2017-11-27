@@ -260,7 +260,12 @@ h2.inhabitent-adventures {
   }
 }
 
-.product-info.container h2 {
+.product-info.container {
+  width: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -268,10 +273,11 @@ h2.inhabitent-adventures {
   text-transform: uppercase;
   font-family: $font_accent;
   font-weight: 300;
+ }
 }
-
 .product-type-blocks {
   display: flex;
+  width: 1024px;
    .product-type-block-wrapper {
      margin: 10px;
      padding: 10px;
@@ -367,10 +373,11 @@ h2.inhabitent-adventures {
         top: 20px;
         left: 0;
         color: $color__background-screen;
+        width: 80%;
         a {
           color: $color__background-screen;
           font-family: $font_accent;
-          font-size: 20px;
+          font-size: 40px;
           padding: 2% 1%;
           }
       } .entry-meta {
@@ -381,6 +388,11 @@ h2.inhabitent-adventures {
         position: absolute;
         right: 0;
         bottom: 7px;
+        time.entry-date.published {
+          color: #f1f1f1;
+          font-family: $font_accent;
+          font-size: 16px;
+        }
       }
     } 
   }
@@ -578,6 +590,13 @@ p.p1 {
 
 // archive page
 .archive {
+  .page-header {
+    width: 100%;
+  h1.page-title {
+  text-transform: uppercase;
+  border-bottom: $solid_border;
+  }
+}
   .site-content {
     display: flex;
     flex-direction: column;

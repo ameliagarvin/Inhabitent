@@ -76,9 +76,11 @@
 			top: 20px;
 			left: 0;
 			color: $color__background-screen;
+			width: 80%;
 			a {
 				color: $color__background-screen;
 				font-family: $font_accent;
+				font-size: 40px;
 				}
 		} .entry-meta {
 			background-color: $brand_color_green;
@@ -88,6 +90,7 @@
 			position: absolute;
 			right: 0;
 			bottom: 7px;
+			font-size: 16px;
 		}
   	} 
 	}
