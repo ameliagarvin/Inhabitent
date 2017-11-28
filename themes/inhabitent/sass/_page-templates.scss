@@ -28,6 +28,8 @@ fieldset {
 ul.stories {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
  } li.storie-items {
    border: $solid_border;
    padding-bottom: 20px;
@@ -730,4 +732,8 @@ article#post-96,
    }  .widget.widget_categories {
     @extend .widget.widget_recent_entries;
   }
+}
+
+#wpcf7-f140-p42-o1 {
+  width: 100%;
 }

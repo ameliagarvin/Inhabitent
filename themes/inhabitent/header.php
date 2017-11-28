@@ -30,11 +30,26 @@
 				 
 				<nav id="site-navigation" class="main-navigation"> 
 				
-		   <div class="tent">
-				<a href="/inhabitent" rel="home">
-				<img src="<?php echo get_stylesheet_directory_uri();?>/images/inhabitent-logo-tent.svg" alt="company logo"/>
-        </a>
-        </div>
+
+				<?php if(is_front_page() || is_page_template('page-templates/about.php')): ?>
+
+					<div class="tent">
+						<a href="/inhabitent" rel="home">
+							<img src="<?php echo get_stylesheet_directory_uri();?>/images/inhabitent-logo-tent-white.svg" alt="company logo"/>
+						</a>
+					</div>
+
+				<?php else: ?>
+				
+				<div class="tent">
+					<a href="/inhabitent" rel="home">
+						<img src="<?php echo get_stylesheet_directory_uri();?>/images/inhabitent-logo-tent.svg" alt="company logo"/>
+					</a>
+				</div>
+
+
+				<?php endif; ?>
+		
 <!-- put the search icon -->
         
           

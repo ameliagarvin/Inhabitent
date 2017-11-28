@@ -110,8 +110,8 @@
 
 // single journal posts using single-post class rather than targeting individual page id's
 
-.single-post {
-	.site-content {
+.postid-42 {
+  .site-content {
     margin: auto;
     padding-top: 28px;
     display: flex;
@@ -127,9 +127,12 @@
         top: 20px;
         left: 0;
         color: $color__background-screen;
+        width: 80%;
         a {
           color: $color__background-screen;
           font-family: $font_accent;
+          font-size: 40px;
+          padding: 2% 1%;
           }
       } .entry-meta {
         background-color: $brand_color_green;
@@ -139,6 +142,11 @@
         position: absolute;
         right: 0;
         bottom: 7px;
+        time.entry-date.published {
+          color: #f1f1f1;
+          font-family: $font_accent;
+          font-size: 16px;
+        }
       }
     } 
   }
@@ -148,18 +156,24 @@
 .social-media-journal {
 		display: flex;
 		width: 100%;
-		a {
+		font-family: $font_accent;
+		button.blk {
+			border-radius: 0;
+			background: transparent;
 			border: 1px solid black;
 			padding: 10px 30px;
 			color: black;
-			font-family: $font_accent;
 			text-transform: uppercase;
 			margin-left: 10px;
-		} i {
+			font-family: $font_accent;
+			box-shadow: none;
+		}
+		i {
 			color: black;
 			margin-right: 10px;
-		} 
-	}
+		}
+	} 
+
 .nav-previous {
 	display: none;
 }
@@ -312,4 +326,52 @@ input.submit {
 	border: none;
 	text-transform: uppercase;
 	padding: 1% 2%;
+}
+
+.single-post {
+	#wpcf7-f140-p45-o1{
+		width: 100%;
+	}
+	.nav-next{
+		display: none;
+	}
+	.site-content {
+    margin: auto;
+    padding-top: 28px;
+    display: flex;
+    .entry-header {
+      position: relative;
+      img {
+        width: 100%;
+      } .entry-title {
+        background-color: $brand_color_green;
+        font-family: $font_accent;
+        text-transform: uppercase;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        color: $color__background-screen;
+        width: 80%;
+        a {
+          color: $color__background-screen;
+          font-family: $font_accent;
+          font-size: 40px;
+          padding: 2% 1%;
+          }
+      } .entry-meta {
+        background-color: $brand_color_green;
+        font-family: $font_accent;
+        color: $color__background-screen;
+        text-align: center;
+        position: absolute;
+        right: 0;
+        bottom: 7px;
+        time.entry-date.published {
+          color: #f1f1f1;
+          font-family: $font_accent;
+          font-size: 16px;
+        }
+      }
+    } 
+  }
 }
