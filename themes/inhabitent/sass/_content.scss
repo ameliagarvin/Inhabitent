@@ -105,6 +105,10 @@
 			flex-direction: row;
 			margin: 0 auto;
 			width: 1120px;
+			#primary {
+				margin-right: 5%;
+				margin-bottom: 5%;
+			}
 		}
 	}
 
@@ -198,6 +202,10 @@
 // Search results page
 
 .search-results {
+	.hentry {
+		display: flex;
+		flex-flow: column nowrap;
+	}
 	.entry-summary {
 		p {
 			font-weight: 100;
@@ -408,4 +416,9 @@ input.wpcf7-form-control.wpcf7-text.wpcf7-url.wpcf7-validates-as-url {
       }
     } 
   }
+}
+.pinterest {
+	a {
+		font-family: $font_accent;
+	}
 }

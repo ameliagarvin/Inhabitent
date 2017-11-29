@@ -287,6 +287,7 @@ h2 {
   font-weight: 300;
  }
 }
+.home {
 .product-type-blocks {
   display: flex;
   width: 1024px;
@@ -319,7 +320,7 @@ h2 {
     }
    }
 }
-
+}
 //sidebar
 #primary {
   padding-right: 5%;
@@ -374,14 +375,27 @@ h2 {
 // Journal Page
 .blog,
 .error404,
-.page-id-72 {
+.page-id-72,
+.tag,
+.category {
  
-  .site-content {
+  #content {
     display: flex;
+    flex-flow: row nowrap;
+    #primary {
+      padding: 0 5%;
+      margin-bottom: 5%;
+  }
   }
 } 
-
 .blog {
+  #content {
+    margin-top: 5%;
+  }
+}
+.blog,
+.tag,
+.category {
   .site-content {
     margin: auto;
     padding-top: 28px;
@@ -404,6 +418,9 @@ h2 {
           font-family: $font_accent;
           font-size: 40px;
           padding: 2% 1%;
+          &:hover {
+            color: $brand_color_light_grey;
+          }
           }
       } .entry-meta {
         background-color: $brand_color_green;
@@ -461,6 +478,10 @@ h2 {
 	a {
     color: #FFF;
     padding-left: 10px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   i {
     color: white;
@@ -627,6 +648,7 @@ p.p1 {
     flex-direction: column;
     #primary {
       padding-top: 0px;
+      padding-right: 0;
     }
     .product-type-blocks {
       display: flex;
@@ -635,11 +657,15 @@ p.p1 {
       width: 100%;
     } .product-type-block-wrapper{
       border: none;
+      margin: 0 1%;
     } a.btn {
       font-family: $font_accent;
       font-size: 20px;
       background-color: #FFF; 
       color: $color__text-screen;
+      &:hover {
+        color: $color__text-main;
+      }
     }
   }
 }
@@ -649,7 +675,6 @@ p.p1 {
   display: flex;
   justify-content: center;  
   align-items: center;
-  margin-top: 40px;
   margin-bottom: 0px;
   font-family: $font_accent;
   font-size: 1.5em;
@@ -673,7 +698,8 @@ p.p1 {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-top: 5%;
+    padding: 0;
+    margin: 5% 3% 0 3%;
   } li {
     flex: 0 1 23%;
     border: $solid_border;
@@ -703,6 +729,7 @@ article#post-96,
 #post-94,
 #post-92, {
   display: flex;
+  margin-bottom: 10%;
   header.entry-header {
     display: flex;
     align-items: center;
@@ -712,12 +739,7 @@ article#post-96,
    margin: 0;
    width: 50%;
    margin-left: 5%;
-   span {
-     line-height: inherit;
-   }
- } p {
-   font-family: $font_main;
-   font-weight: 100;
+
  }
 } h1.entry-title {
     color: $brand_color_orange;
@@ -790,4 +812,7 @@ body.page-template-default.page.page-id-72.logged-in.admin-bar.customize-support
       justify-content: flex-start;
     }
   }
+}
+.tag {
+
 }

@@ -4,7 +4,7 @@
 
 /* Buttons */
 
-button,
+// button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -63,26 +63,21 @@ textarea {
 
 // social-media-buttons
 
-.social-media-journal {
+#social-media-journal {
 	width: 100%;
+ button {
+	 font-family: $font_accent;
+	 background-color: white;
+	 border-style: none;
+	 border: 1px solid black;
+	 padding: .5rem 1rem;
+	 &:hover {
+		 background-color: $brand_color_green;
+		 border: none;
+	 }
+ }
+}
 
-}
-.facebook {
-	background-color: white;
-	border: 1px solid black;
-	
-}
-
-button.twitter {
-	font-family: $font_accent;
-	background-color: white;
-	border: 1px solid black;
-}
-.button.pinterest {
-	font-family: $font_accent;
-	background-color: white;
-	border: 1px solid black;
-}
 .nav-previous {
 display: none;
 }
