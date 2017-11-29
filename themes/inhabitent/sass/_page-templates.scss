@@ -652,7 +652,7 @@ p.p1 {
     list-style: none;
     margin-top: 5%;
   } li {
-    max-width: 22%;
+    flex: 0 1 23%;
     border: $solid_border;
     margin: 10px;
   } img {

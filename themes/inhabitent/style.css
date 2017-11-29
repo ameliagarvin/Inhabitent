@@ -396,18 +396,17 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   padding: .75rem 1.5rem;
-  background-color: #248A83;
-  color: white;
   border-style: none;
   font-family: "nov", Arial, sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: black; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+    background-color: #248A83;
+    color: white;
+    border: none; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -452,6 +451,26 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.social-media-journal {
+  width: 100%; }
+
+.facebook {
+  background-color: white;
+  border: 1px solid black; }
+
+button.twitter {
+  font-family: "nov", Arial, sans-serif;
+  background-color: white;
+  border: 1px solid black; }
+
+.button.pinterest {
+  font-family: "nov", Arial, sans-serif;
+  background-color: white;
+  border: 1px solid black; }
+
+.nav-previous {
+  display: none; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -480,7 +499,7 @@ a {
   position: fixed;
   background: rgba(255, 255, 255, 0.8);
   z-index: 5;
-  padding: 10px;
+  padding-top: 10px;
   top: 30px; }
   .main-navigation ul {
     display: none;
@@ -551,17 +570,6 @@ a {
 
 .search-icon {
   color: #21759b; }
-
-.social-media button.social-media-button {
-  background-color: transparent;
-  background-color: transparent;
-  border: 1px solid black;
-  border-radius: 0;
-  font-family: "nov", Arial, sans-serif;
-  text-transform: uppercase; }
-
-.social-media i {
-  margin-right: 10px; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -765,30 +773,6 @@ a {
         color: #f1f1f1;
         font-family: "nov", Arial, sans-serif;
         font-size: 16px; }
-
-.social-media-journal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  font-family: "nov", Arial, sans-serif; }
-  .social-media-journal button.blk {
-    border-radius: 0;
-    background: transparent;
-    border: 1px solid black;
-    padding: 10px 30px;
-    color: black;
-    text-transform: uppercase;
-    margin-left: 10px;
-    font-family: "nov", Arial, sans-serif;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-  .social-media-journal i {
-    color: black;
-    margin-right: 10px; }
-
-.nav-previous {
-  display: none; }
 
 #comments {
   width: 100%; }
@@ -1705,7 +1689,9 @@ p.p1 {
     list-style: none;
     margin-top: 5%; }
   .product-container li {
-    max-width: 22%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 23%;
+            flex: 0 1 23%;
     border: 1px solid #e1e1e1;
     margin: 10px; }
   .product-container img {

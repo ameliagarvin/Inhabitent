@@ -36,7 +36,7 @@ a {
 	position: fixed;
 	background: rgba(255, 255, 255, 0.8); 
 	z-index: 5;
-	padding: 10px;
+	padding-top: 10px;
 	top: 30px;
 
 ul {
@@ -146,16 +146,3 @@ ul {
 	color: $color__text-screen;
 }
 
-.social-media {
-		button.social-media-button {
-		background-color: transparent;
-		background-color: transparent;
-    border: 1px solid black;
-		border-radius: 0;
-		font-family: $font_accent;
-		text-transform: uppercase;
-	} i {
-		margin-right: 10px;
-	} 
-	
-}

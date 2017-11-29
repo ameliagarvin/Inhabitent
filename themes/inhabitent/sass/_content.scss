@@ -153,30 +153,6 @@
 }
 // styling comment section in individual journal posts
 
-.social-media-journal {
-		display: flex;
-		width: 100%;
-		font-family: $font_accent;
-		button.blk {
-			border-radius: 0;
-			background: transparent;
-			border: 1px solid black;
-			padding: 10px 30px;
-			color: black;
-			text-transform: uppercase;
-			margin-left: 10px;
-			font-family: $font_accent;
-			box-shadow: none;
-		}
-		i {
-			color: black;
-			margin-right: 10px;
-		}
-	} 
-
-.nav-previous {
-	display: none;
-}
 
 #comments {
 	width: 100%;
