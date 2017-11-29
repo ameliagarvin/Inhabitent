@@ -450,12 +450,14 @@ textarea {
 #social-media-journal {
   width: 100%; }
   #social-media-journal button {
+    color: black;
     font-family: "nov", Arial, sans-serif;
     background-color: white;
     border-style: none;
     border: 1px solid black;
     padding: .5rem 1rem; }
     #social-media-journal button:hover {
+      color: white;
       background-color: #248A83;
       border: none; }
 
@@ -1773,7 +1775,8 @@ p.p1 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  margin-bottom: 4rem; }
   .product-container ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1921,3 +1924,11 @@ body.page-template-default.page.page-id-72.logged-in.admin-bar.customize-support
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
+
+div.entry-content p.BodyA {
+  line-height: 1.75em; }
+
+.entry-date.published {
+  color: white;
+  font-family: "nov", Arial, sans-serif;
+  font-size: 16px; }

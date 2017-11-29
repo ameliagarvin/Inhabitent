@@ -66,12 +66,14 @@ textarea {
 #social-media-journal {
 	width: 100%;
  button {
+	 color: black;
 	 font-family: $font_accent;
 	 background-color: white;
 	 border-style: none;
 	 border: 1px solid black;
 	 padding: .5rem 1rem;
 	 &:hover {
+		 color: white;
 		 background-color: $brand_color_green;
 		 border: none;
 	 }

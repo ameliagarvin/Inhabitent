@@ -14,11 +14,11 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-
-			<div class="social-media-journal">
-		<button type="button" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i>like</button>
-	  <button type="button" class="twitter"><i class="fa fa-twitter" aria-hidden="true">tweet</i></button>
-		<button type="button" class="pinterest"><i class="fa fa-pinterest" aria-hidden="true">pin</i></button>
+		
+			<div id="social-media-journal">
+			<button type="button" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i>like</button>
+	 		<button type="button" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i>tweet</button>
+	 		<button type="button" class="pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i>pin</button>
 		</div>
 
 			<?php the_post_navigation(); ?>

@@ -694,6 +694,7 @@ p.p1 {
 .product-container {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 4rem;
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -813,6 +814,14 @@ body.page-template-default.page.page-id-72.logged-in.admin-bar.customize-support
     }
   }
 }
-.tag {
+div.entry-content {
+  p.BodyA {
+    line-height: 1.75em;
+  }
+}
 
+.entry-date.published {
+  color: white;
+  font-family: $font_accent;
+  font-size: 16px;
 }
