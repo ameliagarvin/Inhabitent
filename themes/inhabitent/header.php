@@ -33,7 +33,7 @@
 
 				<?php if(is_front_page() || is_page_template('page-templates/about.php')): ?>
 
-					<div class="tent">
+					<div class="white-tent">
 						<a href="/inhabitent" rel="home">
 							<img src="<?php echo get_stylesheet_directory_uri();?>/images/inhabitent-logo-tent-white.svg" alt="company logo"/>
 						</a>

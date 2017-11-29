@@ -104,11 +104,11 @@ ul.stories {
     font-family: $font_accent;
     text-transform: uppercase;
     padding: 2% 3%;
-    transition: all .2s;
     background-color: transparent;
-    a.read-more:hover {
-      background-color: $brand_color_green;
-      border: 1px solid $brand_color_green;
+    &:hover {
+      background-color: #404040;;
+      color: white;
+      border: none;
     }
   }
 }
@@ -190,7 +190,10 @@ ul.stories {
     font-family: $font_accent;
     color: white;
     font-size: 20px;
-    margin-left: 10%;
+    margin-left: 5.5%;
+    &:hover {
+      background-color: #404040;
+    }
   }
 }
 
@@ -242,23 +245,23 @@ h2.inhabitent-adventures {
 
 .home {
   .site-header {
-    .tent {
-      display: none;
+    .white-tent {
+      width: 50px;
+      margin-left: 70px;
     }
     .main-navigation {
       border: none;
       background-color: transparent;
       display: flex;
-      justify-content: flex-end;
-      background-image: url(../../images/inhabitent-logo-tent-white.svg);
-      background-size: 50px 33px;
-      background-repeat: no-repeat;
+      justify-content: space-between;
       border: none;
-      background-color: transparent;
-      background-position-x: 2%;
+      
       a {
         color: white;
         text-shadow: 1px 1px 2px #323232;
+        &:hover {
+          color: $brand_color_orange;
+        }
       }
     }
   } #content {
@@ -527,11 +530,14 @@ h2 {
 }
 
 .page-id-5 {
-  .site-header {      
+  .site-header {  
+    .white-tent {
+      width: 50px;
+      margin-left: 70px;
+    }    
     .main-navigation {
       display: flex;
-      justify-content: flex-end;
-      background-image: url(../../images/inhabitent-logo-tent-white.svg);
+      justify-content: space-between;
       background-size: 50px 33px;
       background-repeat: no-repeat;
       border: none;
@@ -540,9 +546,6 @@ h2 {
       a {
         color: white;
         text-shadow: 1px 1px 2px #323232;
-      }
-      .tent {
-        display: none;
       }
     }
   }
@@ -647,6 +650,7 @@ p.p1 {
 
 .product-name {
   display: flex;
+  justify-content: center;
     h2.entry-title {
       justify-content: center;
       font-family: $font_main;
@@ -669,7 +673,7 @@ p.p1 {
     margin: 10px;
   } img {
     border-bottom: 4px solid #e1e1e1;
-    height: 50%;
+    height: 80%;
     max-height: 200px;
   } 
 } 

@@ -86,3 +86,14 @@ button.twitter {
 .nav-previous {
 display: none;
 }
+
+.wpcf7-form-control.wpcf7-submit {
+ border: none;
+ background-color: $brand_color_green;
+ color: white;
+ &:hover {
+	background-color:#404040;
+	color: white;
+	border: none;
+}
+}
