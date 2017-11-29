@@ -910,7 +910,17 @@ span.tags-links {
     color: #248A83;
     font-size: 16px; }
 
-.single-post div#wpcf7-f140-p51-o1 {
+.author-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+  .author-info label {
+    width: 60%; }
+
+input.wpcf7-form-control.wpcf7-text.wpcf7-url.wpcf7-validates-as-url {
   width: 100%; }
 
 .single-post .nav-next {
@@ -1093,7 +1103,13 @@ li.storie-items {
   border: 1px solid #000;
   padding: 10px 20px;
   font-family: "nov", Arial, sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  background-color: white;
+  color: black; }
+  .home .site-content .posted-on .read a:hover, .home .site-content a .read a:hover {
+    background-color: #248A83;
+    color: white;
+    border: none; }
 
 .adventure-section {
   display: grid;
@@ -1309,7 +1325,9 @@ li.storie-items {
         -ms-flex-align: center;
             align-items: center;
     border: 1px solid #e1e1e1;
-    border-top: 3px solid #e1e1e1; }
+    border-top: 3px solid #e1e1e1;
+    font-family: "merriweather", Helvetica, serif;
+    text-align: center; }
     .product-type-blocks .product-type-block-wrapper img {
       width: 40%;
       margin: auto; }
@@ -1322,6 +1340,8 @@ li.storie-items {
       text-transform: uppercase;
       font-family: "nov", Arial, sans-serif;
       font-size: .9rem; }
+      .product-type-blocks .product-type-block-wrapper a.btn:hover {
+        background-color: #404040; }
 
 #primary {
   padding-right: 5%;
@@ -1718,6 +1738,28 @@ article#post-96,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  article#post-96 header.entry-header,
+  #post-122 header.entry-header,
+  #post-120 header.entry-header,
+  #post-118 header.entry-header,
+  #post-116 header.entry-header,
+  #post-114 header.entry-header,
+  #post-112 header.entry-header,
+  #post-110 header.entry-header,
+  #post-108 header.entry-header,
+  #post-106 header.entry-header,
+  #post-102 header.entry-header,
+  #post-104 header.entry-header,
+  #post-100 header.entry-header,
+  #post-98 header.entry-header,
+  #post-94 header.entry-header,
+  #post-92 header.entry-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   article#post-96 .entry-content,
   #post-122 .entry-content,
   #post-120 .entry-content,
@@ -1735,7 +1777,26 @@ article#post-96,
   #post-94 .entry-content,
   #post-92 .entry-content {
     margin-left: 10%;
-    width: 50%; }
+    margin: 0;
+    width: 50%;
+    margin-left: 5%; }
+    article#post-96 .entry-content span,
+    #post-122 .entry-content span,
+    #post-120 .entry-content span,
+    #post-118 .entry-content span,
+    #post-116 .entry-content span,
+    #post-114 .entry-content span,
+    #post-112 .entry-content span,
+    #post-110 .entry-content span,
+    #post-108 .entry-content span,
+    #post-106 .entry-content span,
+    #post-102 .entry-content span,
+    #post-104 .entry-content span,
+    #post-100 .entry-content span,
+    #post-98 .entry-content span,
+    #post-94 .entry-content span,
+    #post-92 .entry-content span {
+      line-height: inherit; }
   article#post-96 p,
   #post-122 p,
   #post-120 p,
@@ -1756,7 +1817,15 @@ article#post-96,
     font-weight: 100; }
 
 h1.entry-title {
-  color: #d99054; }
+  color: #d99054;
+  text-transform: uppercase;
+  font-family: "nov", Arial, sans-serif; }
+
+p#price {
+  font-family: "nov", Arial, sans-serif;
+  font-size: 1.8rem;
+  margin-top: 0;
+  text-transform: uppercase; }
 
 .error404 p {
   font-family: "merriweather", Helvetica, serif;

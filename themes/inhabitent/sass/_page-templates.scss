@@ -70,6 +70,13 @@ ul.stories {
           padding: 10px 20px;
           font-family: $font_accent;
           text-transform: uppercase;
+          background-color: white;
+          color: black;
+          &:hover {
+            background-color: $brand_color_green;
+            color: white;
+            border: none;
+          }
         }
       }
     }
@@ -289,6 +296,8 @@ h2 {
      align-items: center;
      border: $solid_border;
      border-top: 3px solid #e1e1e1;
+     font-family: $font_main;
+     text-align: center;
      img {
        width: 40%;
        margin: auto;
@@ -301,6 +310,9 @@ h2 {
       text-transform: uppercase;
       font-family: $font_accent;
       font-size: .9rem;
+      &:hover {
+        background-color: $color__text-main;
+      }
     }
    }
 }
@@ -678,19 +690,34 @@ article#post-96,
 #post-100,
 #post-98,
 #post-94,
-#post-92,
-
- {
+#post-92, {
   display: flex;
+  header.entry-header {
+    display: flex;
+    align-items: center;
+  }
  .entry-content {
    margin-left: 10%;
+   margin: 0;
    width: 50%;
+   margin-left: 5%;
+   span {
+     line-height: inherit;
+   }
  } p {
    font-family: $font_main;
    font-weight: 100;
  }
 } h1.entry-title {
     color: $brand_color_orange;
+    text-transform: uppercase;
+    font-family: $font_accent;
+  }
+p#price {
+    font-family: $font_accent;
+    font-size: 1.8rem;
+    margin-top: 0;
+    text-transform: uppercase;
   }
 
 // error page styles

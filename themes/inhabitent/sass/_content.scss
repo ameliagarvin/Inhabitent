@@ -329,10 +329,19 @@ span.tags-links {
  }
 }
 
-.single-post {
-	div#wpcf7-f140-p51-o1{
-		width: 100%;
+.author-info {
+	display: flex;
+	align-items: baseline;
+	label {
+		width: 60%;
 	}
+}
+
+input.wpcf7-form-control.wpcf7-text.wpcf7-url.wpcf7-validates-as-url {
+	width: 100%;
+}
+.single-post {
+	
 	.nav-next{
 		display: none;
 	}
