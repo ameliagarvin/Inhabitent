@@ -28,8 +28,8 @@ get_header(); ?>
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :?>
-					<h1>post a comment</h1>
-					<p>Want to join the discussion? Feel free to contribute!</p>
+					<div class="post-a-comment"><h1>post a comment</h1><div>
+					<div class="join-discussion"><p>Want to join the discussion? Feel free to contribute!</p></div>
 					<?php echo do_shortcode( '[contact-form-7 id="140" title="Comment"]' ); 
 					  
 				endif;

@@ -328,12 +328,49 @@ input.submit {
 	padding: 1% 2%;
 }
 
+span.cat-links {
+	text-transform: uppercase;
+	font-family: $font_accent;
+	font-size: 16px;
+	margin-left: 10px;
+	a {
+		text-transform: uppercase;
+		font-family: $font_accent;
+		color: $brand_color_green;
+		font-size: 16px;
+	}
+}
+span.tags-links {
+	text-transform: uppercase;
+	font-family: $font_accent;
+	font-size: 16px;
+	margin-left: 10px;
+ a {
+	 text-transform: uppercase;
+	 font-family: $font_accent;
+	 color: $brand_color_green;
+	 font-size: 16px;
+ }
+}
+
 .single-post {
-	#wpcf7-f140-p45-o1{
+	div#wpcf7-f140-p51-o1{
 		width: 100%;
 	}
 	.nav-next{
 		display: none;
+	}
+	.post-a-comment {
+		width: 100%;
+		text-transform: uppercase;
+		font-family: $font_accent;
+	}
+	.join-discussion {
+		width: 100%;
+		font-family: $font-main;
+		p {
+			text-transform: none;
+		}
 	}
 	.site-content {
     margin: auto;
