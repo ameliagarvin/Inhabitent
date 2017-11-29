@@ -1703,6 +1703,11 @@ p.p1 {
   line-height: 1.5;
   font-size: 16px; }
 
+.archive .entry-date.published {
+  color: white;
+  font-family: "nov", Arial, sans-serif;
+  font-size: 16px; }
+
 .archive .page-header {
   width: 100%; }
   .archive .page-header h1.page-title {
@@ -1927,8 +1932,3 @@ body.page-template-default.page.page-id-72.logged-in.admin-bar.customize-support
 
 div.entry-content p.BodyA {
   line-height: 1.75em; }
-
-.entry-date.published {
-  color: white;
-  font-family: "nov", Arial, sans-serif;
-  font-size: 16px; }
