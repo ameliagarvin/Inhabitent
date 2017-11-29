@@ -544,6 +544,8 @@ a {
     font-family: "nov", Arial, sans-serif;
     text-transform: uppercase;
     font-size: 16px; }
+    .main-navigation a:hover {
+      color: #404040; }
 
 /* Small menu. */
 .menu-toggle,
@@ -1387,6 +1389,8 @@ li.storie-items {
 .widget.widget_archive a {
   color: #248A83;
   font-size: 16px; }
+  .widget.widget_archive a:hover {
+    color: #404040; }
 
 .contact-meta i {
   padding-right: 15px; }
@@ -1394,6 +1398,8 @@ li.storie-items {
 .contact-meta a {
   color: #248A83;
   font-size: 16px; }
+  .contact-meta a:hover {
+    color: #404040; }
 
 .blog .site-content,
 .error404 .site-content,
@@ -1886,3 +1892,19 @@ p#price {
 
 #wpcf7-f140-p42-o1 {
   width: 100%; }
+
+body.page-template-default.page.page-id-72.logged-in.admin-bar.customize-support .entry-header h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+body.page-template-default.page.page-id-72.logged-in.admin-bar.customize-support .entry-content h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }

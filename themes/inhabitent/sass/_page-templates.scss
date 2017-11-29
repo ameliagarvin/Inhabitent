@@ -352,6 +352,9 @@ h2 {
   } a {
     color: $brand_color_green; 
     font-size: 16px;
+    &:hover {
+      color: #404040;
+    }
   }
 }
 
@@ -361,14 +364,18 @@ h2 {
   } a {
     color: $brand_color_green;
     font-size: 16px;
+    &:hover {
+      color: #404040;
+    }
   } 
 }
+
 
 // Journal Page
 .blog,
 .error404,
 .page-id-72 {
-  // color: green;
+ 
   .site-content {
     display: flex;
   }
@@ -768,4 +775,19 @@ p#price {
 
 #wpcf7-f140-p42-o1 {
   width: 100%;
+}
+// find us page
+body.page-template-default.page.page-id-72.logged-in.admin-bar.customize-support {
+  .entry-header {
+   h1 {
+    display: flex;
+    justify-content: flex-start;
+   }
+  }
+  .entry-content {
+    h2 {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
 }
