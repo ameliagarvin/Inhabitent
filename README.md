@@ -1,29 +1,19 @@
 # Inhabitent
 
-# Inhabitent
+Inhabitent is my first Wordpress theme as well as the first time developing using Wordpress. The project was made for a fictional brand named Inhabitent. It is a multiple page Wordpress website which allows a user to search through potentially buying products from the brand inhabitent. The website features an about page which tells the story of the inhabitent brand, a front-page which displays featured posts and journal pages which have brand stories in relation to the available products.
 
-Inhabitent is my first Wordpress theme as well as the first time developing using Wordpress. The project was made for a fictional brand named Inhabitent. 
+# What I learned
 
-## Installation
-
-### 1. Download me (don't clone me!)
-
-Then add me to your `wp-content` directory.
-
-### 2. Rename the `redstarter-master` directory
-
-Make sure that the theme directory name is project appropriate!
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+During this project I learned how to target specific pages using the built in wordpress classes. How to use PHP in relation to Wordpress, how to navigate through the Wordpress Dashboard. The challenges in this project were the amount of CSS to accomplish, hidden gotcha's such as the category and Tag pages and properly organizing CSS. 
 
 # Acknowlegments
 
 * Class mates for lending a hand.
 * The instructors at Red Academy, Jim Bennet and Rose Cass.
 * Google!
+
+# Technologies used
+* Visual Studio Code
+* HTML, CSS, SASS, JAVASCRIPT, Gulp, Worpress, PHP, widgets, plugins and custom post types.
+* Github to Archive all the progress made on the project!
+
